@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/ainex_arm/ainex_arm.egg-info/PKG-INFO
+writing dependency_links to ../../build/ainex_arm/ainex_arm.egg-info/dependency_links.txt
+writing entry points to ../../build/ainex_arm/ainex_arm.egg-info/entry_points.txt
+writing requirements to ../../build/ainex_arm/ainex_arm.egg-info/requires.txt
+writing top-level names to ../../build/ainex_arm/ainex_arm.egg-info/top_level.txt
+reading manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'
+writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ainex_arm/left_hand_salute_node.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm
+running install
+running install_lib
+copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/left_hand_salute_node.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm
+byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/left_hand_salute_node.py to left_hand_salute_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ainex_arm/ainex_arm.egg-info to /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info
+running install_scripts
+Installing hand_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+Installing left_hand_salute script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+Installing left_hand_wave script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+Installing salute_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+Installing wave_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+writing list of installed files to '/home/vgi/ainex_ws/build/ainex_arm/install.log'

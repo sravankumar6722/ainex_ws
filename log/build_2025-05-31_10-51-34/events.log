@@ -1,0 +1,232 @@
+[0.000000] (-) TimerEvent: {}
+[0.000384] (ainex_arm) JobQueued: {'identifier': 'ainex_arm', 'dependencies': OrderedDict()}
+[0.000843] (ainex_arm) JobStarted: {'identifier': 'ainex_arm'}
+[0.099698] (-) TimerEvent: {}
+[0.200032] (-) TimerEvent: {}
+[0.300353] (-) TimerEvent: {}
+[0.401963] (-) TimerEvent: {}
+[0.503904] (-) TimerEvent: {}
+[0.604312] (-) TimerEvent: {}
+[0.704639] (-) TimerEvent: {}
+[0.804956] (-) TimerEvent: {}
+[0.905331] (-) TimerEvent: {}
+[1.005707] (-) TimerEvent: {}
+[1.106077] (-) TimerEvent: {}
+[1.206448] (-) TimerEvent: {}
+[1.306810] (-) TimerEvent: {}
+[1.407191] (-) TimerEvent: {}
+[1.507577] (-) TimerEvent: {}
+[1.607954] (-) TimerEvent: {}
+[1.708317] (-) TimerEvent: {}
+[1.808687] (-) TimerEvent: {}
+[1.909103] (-) TimerEvent: {}
+[2.009623] (-) TimerEvent: {}
+[2.110016] (-) TimerEvent: {}
+[2.210398] (-) TimerEvent: {}
+[2.310827] (-) TimerEvent: {}
+[2.411205] (-) TimerEvent: {}
+[2.511592] (-) TimerEvent: {}
+[2.611970] (-) TimerEvent: {}
+[2.712356] (-) TimerEvent: {}
+[2.812774] (-) TimerEvent: {}
+[2.913191] (-) TimerEvent: {}
+[3.013589] (-) TimerEvent: {}
+[3.114009] (-) TimerEvent: {}
+[3.214409] (-) TimerEvent: {}
+[3.314811] (-) TimerEvent: {}
+[3.415192] (-) TimerEvent: {}
+[3.515510] (-) TimerEvent: {}
+[3.615903] (-) TimerEvent: {}
+[3.716289] (-) TimerEvent: {}
+[3.816700] (-) TimerEvent: {}
+[3.917083] (-) TimerEvent: {}
+[4.017483] (-) TimerEvent: {}
+[4.117874] (-) TimerEvent: {}
+[4.218281] (-) TimerEvent: {}
+[4.318724] (-) TimerEvent: {}
+[4.419168] (-) TimerEvent: {}
+[4.519527] (-) TimerEvent: {}
+[4.619950] (-) TimerEvent: {}
+[4.720333] (-) TimerEvent: {}
+[4.820734] (-) TimerEvent: {}
+[4.921122] (-) TimerEvent: {}
+[5.021583] (-) TimerEvent: {}
+[5.121970] (-) TimerEvent: {}
+[5.222380] (-) TimerEvent: {}
+[5.349871] (-) TimerEvent: {}
+[5.450255] (-) TimerEvent: {}
+[5.550704] (-) TimerEvent: {}
+[5.651107] (-) TimerEvent: {}
+[5.799918] (-) TimerEvent: {}
+[5.900296] (-) TimerEvent: {}
+[6.000739] (-) TimerEvent: {}
+[6.101125] (-) TimerEvent: {}
+[6.201499] (-) TimerEvent: {}
+[6.301877] (-) TimerEvent: {}
+[6.402264] (-) TimerEvent: {}
+[6.502666] (-) TimerEvent: {}
+[6.603042] (-) TimerEvent: {}
+[6.703446] (-) TimerEvent: {}
+[6.803821] (-) TimerEvent: {}
+[6.904205] (-) TimerEvent: {}
+[7.004617] (-) TimerEvent: {}
+[7.105019] (-) TimerEvent: {}
+[7.205412] (-) TimerEvent: {}
+[7.305819] (-) TimerEvent: {}
+[7.406196] (-) TimerEvent: {}
+[7.506581] (-) TimerEvent: {}
+[7.606954] (-) TimerEvent: {}
+[7.707340] (-) TimerEvent: {}
+[7.807738] (-) TimerEvent: {}
+[7.908119] (-) TimerEvent: {}
+[8.008511] (-) TimerEvent: {}
+[8.108903] (-) TimerEvent: {}
+[8.211526] (-) TimerEvent: {}
+[8.311909] (-) TimerEvent: {}
+[8.412308] (-) TimerEvent: {}
+[8.512712] (-) TimerEvent: {}
+[8.613113] (-) TimerEvent: {}
+[8.713502] (-) TimerEvent: {}
+[8.813891] (-) TimerEvent: {}
+[8.914285] (-) TimerEvent: {}
+[9.014703] (-) TimerEvent: {}
+[9.115104] (-) TimerEvent: {}
+[9.215507] (-) TimerEvent: {}
+[9.315883] (-) TimerEvent: {}
+[9.416255] (-) TimerEvent: {}
+[9.516656] (-) TimerEvent: {}
+[9.617033] (-) TimerEvent: {}
+[9.717412] (-) TimerEvent: {}
+[9.817831] (-) TimerEvent: {}
+[9.918204] (-) TimerEvent: {}
+[10.018547] (-) TimerEvent: {}
+[10.118921] (-) TimerEvent: {}
+[10.219300] (-) TimerEvent: {}
+[10.319698] (-) TimerEvent: {}
+[10.420058] (-) TimerEvent: {}
+[10.520444] (-) TimerEvent: {}
+[10.620815] (-) TimerEvent: {}
+[10.721179] (-) TimerEvent: {}
+[10.821567] (-) TimerEvent: {}
+[10.921937] (-) TimerEvent: {}
+[11.022329] (-) TimerEvent: {}
+[11.122717] (-) TimerEvent: {}
+[11.223088] (-) TimerEvent: {}
+[11.323474] (-) TimerEvent: {}
+[11.423843] (-) TimerEvent: {}
+[11.524222] (-) TimerEvent: {}
+[11.624621] (-) TimerEvent: {}
+[11.724994] (-) TimerEvent: {}
+[11.825380] (-) TimerEvent: {}
+[11.925770] (-) TimerEvent: {}
+[12.026161] (-) TimerEvent: {}
+[12.126543] (-) TimerEvent: {}
+[12.226917] (-) TimerEvent: {}
+[12.327287] (-) TimerEvent: {}
+[12.427686] (-) TimerEvent: {}
+[12.528065] (-) TimerEvent: {}
+[12.628450] (-) TimerEvent: {}
+[12.728820] (-) TimerEvent: {}
+[12.829208] (-) TimerEvent: {}
+[12.929592] (-) TimerEvent: {}
+[13.029984] (-) TimerEvent: {}
+[13.130349] (-) TimerEvent: {}
+[13.230789] (-) TimerEvent: {}
+[13.331153] (-) TimerEvent: {}
+[13.431539] (-) TimerEvent: {}
+[13.531917] (-) TimerEvent: {}
+[13.632305] (-) TimerEvent: {}
+[13.732689] (-) TimerEvent: {}
+[13.833092] (-) TimerEvent: {}
+[13.933475] (-) TimerEvent: {}
+[14.033873] (-) TimerEvent: {}
+[14.134237] (-) TimerEvent: {}
+[14.234638] (-) TimerEvent: {}
+[14.335000] (-) TimerEvent: {}
+[14.435384] (-) TimerEvent: {}
+[14.535780] (-) TimerEvent: {}
+[14.636193] (-) TimerEvent: {}
+[14.736576] (-) TimerEvent: {}
+[14.836962] (-) TimerEvent: {}
+[14.937357] (-) TimerEvent: {}
+[15.037742] (-) TimerEvent: {}
+[15.138120] (-) TimerEvent: {}
+[15.238505] (-) TimerEvent: {}
+[15.338889] (-) TimerEvent: {}
+[15.439282] (-) TimerEvent: {}
+[15.539695] (-) TimerEvent: {}
+[15.640083] (-) TimerEvent: {}
+[15.740472] (-) TimerEvent: {}
+[15.840860] (-) TimerEvent: {}
+[15.941251] (-) TimerEvent: {}
+[16.041651] (-) TimerEvent: {}
+[16.142044] (-) TimerEvent: {}
+[16.807581] (-) TimerEvent: {}
+[16.907943] (-) TimerEvent: {}
+[17.008318] (-) TimerEvent: {}
+[17.108723] (-) TimerEvent: {}
+[17.209094] (-) TimerEvent: {}
+[17.309479] (-) TimerEvent: {}
+[17.409852] (-) TimerEvent: {}
+[17.510212] (-) TimerEvent: {}
+[17.610592] (-) TimerEvent: {}
+[17.710977] (-) TimerEvent: {}
+[17.811350] (-) TimerEvent: {}
+[17.911775] (-) TimerEvent: {}
+[18.012172] (-) TimerEvent: {}
+[18.112591] (-) TimerEvent: {}
+[18.212978] (-) TimerEvent: {}
+[18.313413] (-) TimerEvent: {}
+[18.413829] (-) TimerEvent: {}
+[18.514239] (-) TimerEvent: {}
+[18.614653] (-) TimerEvent: {}
+[18.715067] (-) TimerEvent: {}
+[18.815464] (-) TimerEvent: {}
+[18.915849] (-) TimerEvent: {}
+[19.016220] (-) TimerEvent: {}
+[19.116608] (-) TimerEvent: {}
+[19.217002] (-) TimerEvent: {}
+[19.317380] (-) TimerEvent: {}
+[19.417780] (-) TimerEvent: {}
+[19.518150] (-) TimerEvent: {}
+[19.618495] (-) TimerEvent: {}
+[19.718824] (-) TimerEvent: {}
+[19.819148] (-) TimerEvent: {}
+[19.919469] (-) TimerEvent: {}
+[20.019815] (-) TimerEvent: {}
+[20.059590] (ainex_arm) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ainex_arm', 'build', '--build-base', '/home/vgi/ainex_ws/build/ainex_arm/build', 'install', '--record', '/home/vgi/ainex_ws/build/ainex_arm/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vgi/ainex_ws/src/ainex_arm', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vgi', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/vgi', 'OLDPWD': '/home/vgi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2810', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6776', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/vgi/ainex_ws/install:/home/vgi/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'vgi', 'JOURNAL_STREAM': '8:21945', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vgi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/vgi:@/tmp/.ICE-unix/2662,unix/vgi:/tmp/.ICE-unix/2662', 'INVOCATION_ID': '81b6a2ff6da9437cbc9572c683a72c48', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.FBX562', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:be9aaf2a-def6-41ad-b1a0-92889c938ea3', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vgi/ainex_ws/build/ainex_arm', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vgi/ainex_ws/build/ainex_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/robot_ws/install/robot_arm/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[20.119918] (-) TimerEvent: {}
+[20.220269] (-) TimerEvent: {}
+[20.320592] (-) TimerEvent: {}
+[20.420899] (-) TimerEvent: {}
+[20.434250] (ainex_arm) StdoutLine: {'line': b'running egg_info\n'}
+[20.460087] (ainex_arm) StdoutLine: {'line': b'writing ../../build/ainex_arm/ainex_arm.egg-info/PKG-INFO\n'}
+[20.460529] (ainex_arm) StdoutLine: {'line': b'writing dependency_links to ../../build/ainex_arm/ainex_arm.egg-info/dependency_links.txt\n'}
+[20.462636] (ainex_arm) StdoutLine: {'line': b'writing entry points to ../../build/ainex_arm/ainex_arm.egg-info/entry_points.txt\n'}
+[20.463815] (ainex_arm) StdoutLine: {'line': b'writing requirements to ../../build/ainex_arm/ainex_arm.egg-info/requires.txt\n'}
+[20.464455] (ainex_arm) StdoutLine: {'line': b'writing top-level names to ../../build/ainex_arm/ainex_arm.egg-info/top_level.txt\n'}
+[20.520222] (ainex_arm) StdoutLine: {'line': b"reading manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'\n"}
+[20.520967] (-) TimerEvent: {}
+[20.521296] (ainex_arm) StdoutLine: {'line': b"writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'\n"}
+[20.522049] (ainex_arm) StdoutLine: {'line': b'running build\n'}
+[20.522272] (ainex_arm) StdoutLine: {'line': b'running build_py\n'}
+[20.522489] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/wave_node.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm\n'}
+[20.523355] (ainex_arm) StdoutLine: {'line': b'running install\n'}
+[20.533707] (ainex_arm) StdoutLine: {'line': b'running install_lib\n'}
+[20.559474] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/wave_node.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm\n'}
+[20.560376] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/wave_node.py to wave_node.cpython-312.pyc\n'}
+[20.561349] (ainex_arm) StdoutLine: {'line': b'running install_data\n'}
+[20.561521] (ainex_arm) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.597386] (ainex_arm) StdoutLine: {'line': b"removing '/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[20.597877] (ainex_arm) StdoutLine: {'line': b'Copying ../../build/ainex_arm/ainex_arm.egg-info to /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info\n'}
+[20.599158] (ainex_arm) StdoutLine: {'line': b'running install_scripts\n'}
+[20.621094] (-) TimerEvent: {}
+[20.721472] (-) TimerEvent: {}
+[20.819343] (ainex_arm) StdoutLine: {'line': b'Installing hand_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm\n'}
+[20.819664] (ainex_arm) StdoutLine: {'line': b'Installing wave_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm\n'}
+[20.821008] (ainex_arm) StdoutLine: {'line': b"writing list of installed files to '/home/vgi/ainex_ws/build/ainex_arm/install.log'\n"}
+[20.821538] (-) TimerEvent: {}
+[20.905468] (ainex_arm) CommandEnded: {'returncode': 0}
+[20.921648] (-) TimerEvent: {}
+[20.934220] (ainex_arm) JobEnded: {'identifier': 'ainex_arm', 'rc': 0}
+[20.935687] (-) EventReactorShutdown: {}

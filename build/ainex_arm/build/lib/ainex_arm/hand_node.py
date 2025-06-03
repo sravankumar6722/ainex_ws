@@ -2,9 +2,11 @@ import rclpy
 from rclpy.node import Node
 from rclpy.parameter import Parameter
 from std_msgs.msg import String, Float32MultiArray
+from sensor_msgs.msg import JointState
 import time
 import os
 import pandas as pd
+import numpy as np
 from robot_arm.scservo_sdk import *
 
 # Servo Configuration
@@ -27,7 +29,7 @@ MAX_ANGLE = 90
 
 # Motion settings
 SCS_MOVING_ACC = 240
-SCS_MOVING_SPEED = 500
+SCS_MOVING_SPEED = 1000
 
 # Path to Excel folder
 EXCEL_FOLDER = os.path.expanduser('~/ainex_sheets')
@@ -45,21 +47,28 @@ class HandNode(Node):
         self.declare_parameter('hand', 'right')
         self.hand = self.get_parameter('hand').get_parameter_value().string_value
 
+        # Store last known angles for both arms
+        self.left_angles = [0.0, 0.0, 0.0]
+        self.right_angles = [0.0, 0.0, 0.0]
+
         # Set IDs and topics based on hand
         if self.hand == 'left':
             self.SCS_IDs = [4, 5, 6]
             action_topic = 'left_hand_action'
             result_topic = 'left_hand_action_result'
             angles_topic = 'left_servo_angles'
+            self.default_step_delay = 0.01  # fast for left
         else:
             self.SCS_IDs = [1, 2, 3]
             action_topic = 'hand_action'
             result_topic = 'hand_action_result'
             angles_topic = 'servo_angles'
-
+            self.default_step_delay = 0.03  # slower for right
+        
         self.publisher_ = self.create_publisher(Float32MultiArray, angles_topic, 10)
         self.result_publisher_ = self.create_publisher(String, result_topic, 10)
         self.subscription = self.create_subscription(String, action_topic, self.handle_action, 10)
+        self.joint_state_pub = self.create_publisher(JointState, 'joint_states', 10)
 
         self.portHandler = PortHandler(DEVICENAME)
         self.packetHandler = PacketHandler(PROTOCOL_END)
@@ -74,9 +83,8 @@ class HandNode(Node):
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, SCS_MOVING_SPEED)
 
         self.get_logger().info(f"{self.hand.capitalize()} hand node initialized. Ready to receive commands.")
-        self.move_to_angles([0, 0, 0])  # Home position
-
-# ...existing code...
+        self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)  # Home position
+        
     def handle_action(self, msg):
         action = msg.data.strip().lower()
         sheet_file = os.path.join(EXCEL_FOLDER, f'{action}_sheet.xlsx')
@@ -87,16 +95,50 @@ class HandNode(Node):
             self.publish_result(f'{action}_done')
         else:
             self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
-# ...existing code...
 
-    def move_to_angles(self, angles):
+    def move_to_angles(self, target_angles, step_deg=2, step_delay=0.01):
         # Mirror angles for left hand
         if self.hand == 'left':
-            angles = [-angle for angle in angles]
+            target_angles = [-angle for angle in target_angles]
 
-        for sid, angle in zip(self.SCS_IDs, angles):
+        current_angles = self.read_current_angles()
+        steps = int(max(abs(t - c) for t, c in zip(target_angles, current_angles)) // step_deg) + 1
+
+        for i in range(1, steps + 1):
+            intermediate_angles = [
+                c + (t - c) * i / steps for c, t in zip(current_angles, target_angles)
+            ]
+            for sid, angle in zip(self.SCS_IDs, intermediate_angles):
+                pos = angle_to_position(angle)
+                self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
+            self.update_and_publish_joint_states(intermediate_angles)
+            time.sleep(step_delay)
+        # Ensure final position is set
+        for sid, angle in zip(self.SCS_IDs, target_angles):
             pos = angle_to_position(angle)
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
+        self.update_and_publish_joint_states(target_angles)
+
+    def update_and_publish_joint_states(self, angles):
+        if self.hand == 'left':
+            self.left_angles = angles
+        else:
+            self.right_angles = angles
+        self.publish_joint_states(self.left_angles, self.right_angles)
+
+    def publish_joint_states(self, left_angles, right_angles):
+        js = JointState()
+        js.header.stamp = self.get_clock().now().to_msg()
+        js.name = [
+            'base_to_base_servo_joint',
+            'shoulder_to_shoulder_servo_joint',
+            'elbow_to_elbow_servo_joint',
+            'base_to_right_base_servo_joint',
+            'right_shoulder_to_right_shoulder_servo_joint',
+            'right_elbow_to_right_elbow_servo_joint'
+        ]
+        js.position = [a * 3.14159265 / 180.0 for a in left_angles + right_angles]
+        self.joint_state_pub.publish(js)
 
     def execute_gesture(self, filepath):
         try:
@@ -106,7 +148,7 @@ class HandNode(Node):
                 if self.hand == 'left':
                     angles = [-angle for angle in angles]
                 delay = float(row['Delay']) if 'Delay' in row else 1.0
-                self.move_to_angles(angles)
+                self.move_to_angles(angles, step_delay=self.default_step_delay)
                 time.sleep(delay)
                 self.publish_angles()
         except Exception as e:

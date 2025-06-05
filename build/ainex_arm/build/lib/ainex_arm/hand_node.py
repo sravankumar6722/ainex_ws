@@ -50,6 +50,9 @@ class HandNode(Node):
         # Store last known angles for both arms
         self.left_angles = [0.0, 0.0, 0.0]
         self.right_angles = [0.0, 0.0, 0.0]
+        self.last_servo_update = time.time()
+        self.servo_update_threshold = 0.1  # seconds between servo updates
+        self.external_control_active = False  # Flag to prevent feedback loops
 
         # Set IDs and topics based on hand
         if self.hand == 'left':
@@ -58,18 +61,37 @@ class HandNode(Node):
             result_topic = 'left_hand_action_result'
             angles_topic = 'left_servo_angles'
             self.default_step_delay = 0.0001  # fast for left
+            self.joint_names = [
+                'base_to_base_servo_joint',
+                'shoulder_to_shoulder_servo_joint',
+                'elbow_to_elbow_servo_joint'
+            ]
         else:
             self.SCS_IDs = [1, 2, 3]
             action_topic = 'hand_action'
             result_topic = 'hand_action_result'
             angles_topic = 'servo_angles'
             self.default_step_delay = 0.01  # slower for right
+            self.joint_names = [
+                'base_to_right_base_servo_joint',
+                'right_shoulder_to_right_shoulder_servo_joint',
+                'right_elbow_to_right_elbow_servo_joint'
+            ]
         
         self.publisher_ = self.create_publisher(Float32MultiArray, angles_topic, 10)
         self.result_publisher_ = self.create_publisher(String, result_topic, 10)
         self.subscription = self.create_subscription(String, action_topic, self.handle_action, 10)
         self.joint_state_pub = self.create_publisher(JointState, 'joint_states', 10)
+        
+        # Joint state subscriber for external control
+        self.joint_state_sub = self.create_subscription(
+            JointState,
+            'joint_states',
+            self.joint_state_callback,
+            10
+        )
 
+        # Initialize servo communication
         self.portHandler = PortHandler(DEVICENAME)
         self.packetHandler = PacketHandler(PROTOCOL_END)
 
@@ -85,6 +107,46 @@ class HandNode(Node):
         self.get_logger().info(f"{self.hand.capitalize()} hand node initialized. Ready to receive commands.")
         self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)  # Home position
         
+    def joint_state_callback(self, msg):
+        try:
+            # Skip if we're already executing a command
+            if self.external_control_active:
+                return
+                
+            # Rate limiting
+            if time.time() - self.last_servo_update < self.servo_update_threshold:
+                return
+
+            # Find our joints in the message
+            indices = []
+            current_positions = []
+            for name in self.joint_names:
+                if name in msg.name:
+                    idx = msg.name.index(name)
+                    indices.append(idx)
+                    current_positions.append(msg.position[idx])
+
+            if len(indices) != 3:
+                return
+
+            # Convert radians to degrees
+            current_angles = [pos * 180.0 / 3.14159265 for pos in current_positions]
+
+            # For left hand, mirror the base servo angle
+            if self.hand == 'left':
+                current_angles[0] = -current_angles[0]
+
+            # Move servos to these angles
+            self.external_control_active = True
+            self.move_to_angles(current_angles, step_delay=0.001)
+            self.external_control_active = False
+            
+            self.last_servo_update = time.time()
+
+        except Exception as e:
+            self.get_logger().error(f"Error in joint state callback: {e}")
+            self.external_control_active = False
+
     def handle_action(self, msg):
         action = msg.data.strip().lower()
         sheet_file = os.path.join(EXCEL_FOLDER, f'{action}_sheet.xlsx')
@@ -113,6 +175,7 @@ class HandNode(Node):
                 self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
             self.update_and_publish_joint_states(intermediate_angles)
             time.sleep(step_delay)
+        
         # Ensure final position is set
         for sid, angle in zip(self.SCS_IDs, target_angles):
             pos = angle_to_position(angle)

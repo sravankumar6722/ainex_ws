@@ -57,13 +57,13 @@ class HandNode(Node):
             action_topic = 'left_hand_action'
             result_topic = 'left_hand_action_result'
             angles_topic = 'left_servo_angles'
-            self.default_step_delay = 0.01  # fast for left
+            self.default_step_delay = 0.0001  # fast for left
         else:
             self.SCS_IDs = [1, 2, 3]
             action_topic = 'hand_action'
             result_topic = 'hand_action_result'
             angles_topic = 'servo_angles'
-            self.default_step_delay = 0.03  # slower for right
+            self.default_step_delay = 0.01  # slower for right
         
         self.publisher_ = self.create_publisher(Float32MultiArray, angles_topic, 10)
         self.result_publisher_ = self.create_publisher(String, result_topic, 10)

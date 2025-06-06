@@ -75,7 +75,7 @@
                 <box size="0.1 0.2 0.1"/>
             </geometry>
             <origin xyz="0 0.09 0" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -123,7 +123,7 @@
                 <box size="0.1 0.3 0.1"/>
             </geometry>
             <origin xyz="0 0.08 -0.055" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -171,7 +171,7 @@
                 <box size="0.1 0.3 0.04"/>
             </geometry>
             <origin xyz="0 0.16 -0.015" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -219,7 +219,7 @@
                 <box size="0.1 0.2 0.1"/>
             </geometry>
             <origin xyz="0 -0.09 0" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -267,7 +267,7 @@
                 <box size="0.1 0.3 0.1"/>
             </geometry>
             <origin xyz="0 -0.08 -0.055" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -315,7 +315,7 @@
                 <box size="0.1 0.3 0.04"/>
             </geometry>
             <origin xyz="0 -0.16 -0.015" rpy="0 0 0"/>
-            <material name="grey"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>

@@ -16,7 +16,7 @@ PROTOCOL_END = 1
 
 # Control table addresses
 ADDR_GOAL_POSITION = 42
-ADDR_PRESENT_POSITION = 56  
+ADDR_PRESENT_POSITION = 56
 ADDR_TORQUE_ENABLE = 40
 ADDR_GOAL_ACC = 41
 ADDR_GOAL_SPEED = 46
@@ -43,55 +43,64 @@ class HandNode(Node):
     def __init__(self):
         super().__init__('hand_node')
 
-        # Declare and read 'hand' parameter
         self.declare_parameter('hand', 'right')
         self.hand = self.get_parameter('hand').get_parameter_value().string_value
 
-        # Store last known angles for both arms
         self.left_angles = [0.0, 0.0, 0.0]
         self.right_angles = [0.0, 0.0, 0.0]
         self.last_servo_update = time.time()
-        self.servo_update_threshold = 0.1  # seconds between servo updates
-        self.external_control_active = False  # Flag to prevent feedback loops
+        self.servo_update_threshold = 0.1
+        self.external_control_active = False
 
-        # Set IDs and topics based on hand
+        # Centralized IDs and joint names for both hands
         if self.hand == 'left':
             self.SCS_IDs = [4, 5, 6]
             action_topic = 'left_hand_action'
             result_topic = 'left_hand_action_result'
             angles_topic = 'left_servo_angles'
-            self.default_step_delay = 0.0001  # fast for left
+            self.default_step_delay = 0.0001
             self.joint_names = [
                 'base_to_base_servo_joint',
                 'shoulder_to_shoulder_servo_joint',
                 'elbow_to_elbow_servo_joint'
             ]
-        else:
+        elif self.hand == 'right':
             self.SCS_IDs = [1, 2, 3]
             action_topic = 'hand_action'
             result_topic = 'hand_action_result'
             angles_topic = 'servo_angles'
-            self.default_step_delay = 0.01  # slower for right
+            self.default_step_delay = 0.01
             self.joint_names = [
                 'base_to_right_base_servo_joint',
                 'right_shoulder_to_right_shoulder_servo_joint',
                 'right_elbow_to_right_elbow_servo_joint'
             ]
-        
+        elif self.hand == 'both':
+            self.SCS_IDs = [1, 2, 3, 4, 5, 6]
+            action_topic = 'both_hands_action'
+            result_topic = 'both_hands_action_result'
+            angles_topic = 'both_servo_angles'
+            self.default_step_delay = 0.01
+            self.joint_names = [
+                'base_to_right_base_servo_joint',
+                'right_shoulder_to_right_shoulder_servo_joint',
+                'right_elbow_to_right_elbow_servo_joint',
+                'base_to_base_servo_joint',
+                'shoulder_to_shoulder_servo_joint',
+                'elbow_to_elbow_servo_joint'
+            ]
+        else:
+            self.get_logger().error("Invalid hand parameter! Use right, left, or both.")
+            exit()
+
         self.publisher_ = self.create_publisher(Float32MultiArray, angles_topic, 10)
         self.result_publisher_ = self.create_publisher(String, result_topic, 10)
         self.subscription = self.create_subscription(String, action_topic, self.handle_action, 10)
         self.joint_state_pub = self.create_publisher(JointState, 'joint_states', 10)
-        
-        # Joint state subscriber for external control
-        self.joint_state_sub = self.create_subscription(
-            JointState,
-            'joint_states',
-            self.joint_state_callback,
-            10
-        )
+        self.joint_state_degrees_pub = self.create_publisher(JointState, 'joint_states_degrees', 10)
+        self.joint_state_sub = self.create_subscription(JointState, 'joint_states', self.joint_state_callback, 10)
+        self.timer = self.create_timer(0.1, self.timer_callback)
 
-        # Initialize servo communication
         self.portHandler = PortHandler(DEVICENAME)
         self.packetHandler = PacketHandler(PROTOCOL_END)
 
@@ -105,19 +114,19 @@ class HandNode(Node):
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, SCS_MOVING_SPEED)
 
         self.get_logger().info(f"{self.hand.capitalize()} hand node initialized. Ready to receive commands.")
-        self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)  # Home position
-        
+        if self.hand == 'both':
+            self.move_both_hands_to_angles([0,0,0,0,0,0], step_delay=self.default_step_delay)
+        else:
+            self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)
+
     def joint_state_callback(self, msg):
         try:
-            # Skip if we're already executing a command
             if self.external_control_active:
                 return
-                
-            # Rate limiting
+
             if time.time() - self.last_servo_update < self.servo_update_threshold:
                 return
 
-            # Find our joints in the message
             indices = []
             current_positions = []
             for name in self.joint_names:
@@ -126,40 +135,48 @@ class HandNode(Node):
                     indices.append(idx)
                     current_positions.append(msg.position[idx])
 
-            if len(indices) != 3:
-                return
+            if self.hand == 'both':
+                if len(indices) != 6:
+                    return
+                current_angles = [pos * 180.0 / 3.14159265 for pos in current_positions]
+                self.external_control_active = True
+                self.move_both_hands_to_angles(current_angles, step_delay=0.001)
+                self.external_control_active = False
+            else:
+                if len(indices) != 3:
+                    return
+                current_angles = [pos * 180.0 / 3.14159265 for pos in current_positions]
+                if self.hand == 'left':
+                    current_angles[0] = -current_angles[0]
+                self.external_control_active = True
+                self.move_to_angles(current_angles, step_delay=0.001)
+                self.external_control_active = False
 
-            # Convert radians to degrees
-            current_angles = [pos * 180.0 / 3.14159265 for pos in current_positions]
-
-            # For left hand, mirror the base servo angle
-            if self.hand == 'left':
-                current_angles[0] = -current_angles[0]
-
-            # Move servos to these angles
-            self.external_control_active = True
-            self.move_to_angles(current_angles, step_delay=0.001)
-            self.external_control_active = False
-            
             self.last_servo_update = time.time()
-
         except Exception as e:
             self.get_logger().error(f"Error in joint state callback: {e}")
             self.external_control_active = False
 
     def handle_action(self, msg):
         action = msg.data.strip().lower()
-        sheet_file = os.path.join(EXCEL_FOLDER, f'{action}_sheet.xlsx')
-        if os.path.exists(sheet_file):
-            if action == "salutesequence":
-                self.get_logger().info("Executing the special 'salutesequence' gesture!")
-            self.execute_gesture(sheet_file)
-            self.publish_result(f'{action}_done')
+        if self.hand == 'both':
+            sheet_file = os.path.join(EXCEL_FOLDER, f'{action}_sheet.xlsx')
+            if os.path.exists(sheet_file):
+                self.execute_both_hands_gesture(sheet_file)
+                self.publish_result(f'{action}_done')
+            else:
+                self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
         else:
-            self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
+            sheet_file = os.path.join(EXCEL_FOLDER, f'{action}_sheet.xlsx')
+            if os.path.exists(sheet_file):
+                if action == "salutesequence":
+                    self.get_logger().info("Executing the special 'salutesequence' gesture!")
+                self.execute_gesture(sheet_file)
+                self.publish_result(f'{action}_done')
+            else:
+                self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
 
     def move_to_angles(self, target_angles, step_deg=2, step_delay=0.01):
-        # Mirror angles for left hand
         if self.hand == 'left':
             target_angles = [-angle for angle in target_angles]
 
@@ -175,12 +192,30 @@ class HandNode(Node):
                 self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
             self.update_and_publish_joint_states(intermediate_angles)
             time.sleep(step_delay)
-        
-        # Ensure final position is set
+
         for sid, angle in zip(self.SCS_IDs, target_angles):
             pos = angle_to_position(angle)
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
         self.update_and_publish_joint_states(target_angles)
+
+    def move_both_hands_to_angles(self, angles, step_deg=2, step_delay=0.01):
+        # angles: [right1, right2, right3, left1, left2, left3]
+        current_angles = self.read_current_angles_both()
+        steps = int(max(abs(t - c) for t, c in zip(angles, current_angles)) // step_deg) + 1
+        for i in range(1, steps + 1):
+            intermediate_angles = [
+                c + (t - c) * i / steps for c, t in zip(current_angles, angles)
+            ]
+            for sid, angle in zip(self.SCS_IDs, intermediate_angles):
+                pos = angle_to_position(angle)
+                self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
+            self.update_and_publish_joint_states_both(intermediate_angles)
+            time.sleep(step_delay)
+        # Final position
+        for sid, angle in zip(self.SCS_IDs, angles):
+            pos = angle_to_position(angle)
+            self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
+        self.update_and_publish_joint_states_both(angles)
 
     def update_and_publish_joint_states(self, angles):
         if self.hand == 'left':
@@ -188,6 +223,14 @@ class HandNode(Node):
         else:
             self.right_angles = angles
         self.publish_joint_states(self.left_angles, self.right_angles)
+        self.publish_joint_states_degrees(self.left_angles, self.right_angles)
+
+    def update_and_publish_joint_states_both(self, angles):
+        # angles: [right1, right2, right3, left1, left2, left3]
+        self.right_angles = angles[:3]
+        self.left_angles = angles[3:]
+        self.publish_joint_states(self.left_angles, self.right_angles)
+        self.publish_joint_states_degrees(self.left_angles, self.right_angles)
 
     def publish_joint_states(self, left_angles, right_angles):
         js = JointState()
@@ -200,8 +243,24 @@ class HandNode(Node):
             'right_shoulder_to_right_shoulder_servo_joint',
             'right_elbow_to_right_elbow_servo_joint'
         ]
+        # Convert degrees to radians for ROS standard topic
         js.position = [a * 3.14159265 / 180.0 for a in left_angles + right_angles]
         self.joint_state_pub.publish(js)
+
+    def publish_joint_states_degrees(self, left_angles, right_angles):
+        js = JointState()
+        js.header.stamp = self.get_clock().now().to_msg()
+        js.name = [
+            'base_to_base_servo_joint',
+            'shoulder_to_shoulder_servo_joint',
+            'elbow_to_elbow_servo_joint',
+            'base_to_right_base_servo_joint',
+            'right_shoulder_to_right_shoulder_servo_joint',
+            'right_elbow_to_right_elbow_servo_joint'
+        ]
+        # Publish degrees directly for easier debugging/custom tools
+        js.position = left_angles + right_angles
+        self.joint_state_degrees_pub.publish(js)
 
     def execute_gesture(self, filepath):
         try:
@@ -217,18 +276,42 @@ class HandNode(Node):
         except Exception as e:
             self.get_logger().error(f"Failed to execute gesture from {filepath}: {e}")
 
+    def execute_both_hands_gesture(self, filepath):
+        try:
+            df = pd.read_excel(filepath)
+            for _, row in df.iterrows():
+                angles = [row[f'Servo{i}'] for i in range(1, 7)]
+                delay = float(row['Delay']) if 'Delay' in row else 1.0
+                self.move_both_hands_to_angles(angles, step_delay=self.default_step_delay)
+                time.sleep(delay)
+                self.publish_angles_both()
+        except Exception as e:
+            self.get_logger().error(f"Failed to execute both hands gesture from {filepath}: {e}")
+
     def publish_angles(self):
         msg = Float32MultiArray()
         msg.data = self.read_current_angles()
         self.publisher_.publish(msg)
 
+    def publish_angles_both(self):
+        msg = Float32MultiArray()
+        msg.data = self.read_current_angles_both()
+        self.publisher_.publish(msg)
+
     def read_current_angles(self):
         angles = []
         for sid in self.SCS_IDs:
-            pos_speed, _, _ = self.packetHandler.read4ByteTxRx(self.portHandler, sid, ADDR_PRESENT_POSITION)
-            raw_pos = SCS_LOWORD(pos_speed)
+            raw_pos, _, _ = self.packetHandler.read2ByteTxRx(self.portHandler, sid, ADDR_PRESENT_POSITION)
             angle = MIN_ANGLE + (raw_pos - MIN_RAW_POS) * (MAX_ANGLE - MIN_ANGLE) / (MAX_RAW_POS - MIN_RAW_POS)
-            angles.append(round(angle, 2))
+            angles.append(round(angle, 1))  # Rounded for stability
+        return angles
+
+    def read_current_angles_both(self):
+        angles = []
+        for sid in [1, 2, 3, 4, 5, 6]:
+            raw_pos, _, _ = self.packetHandler.read2ByteTxRx(self.portHandler, sid, ADDR_PRESENT_POSITION)
+            angle = MIN_ANGLE + (raw_pos - MIN_RAW_POS) * (MAX_ANGLE - MIN_ANGLE) / (MAX_RAW_POS - MIN_RAW_POS)
+            angles.append(round(angle, 1))
         return angles
 
     def publish_result(self, result):
@@ -236,6 +319,14 @@ class HandNode(Node):
         msg.data = result
         self.result_publisher_.publish(msg)
         self.get_logger().info(f"Published Action Result: {result}")
+
+    def timer_callback(self):
+        if self.hand == 'both':
+            angles = self.read_current_angles_both()
+            self.update_and_publish_joint_states_both(angles)
+        else:
+            angles = self.read_current_angles()
+            self.update_and_publish_joint_states(angles)
 
     def cleanup(self):
         self.get_logger().info("Disabling torque and closing port.")

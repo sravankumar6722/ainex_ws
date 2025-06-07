@@ -1,0 +1,279 @@
+<?xml version='1.0'?>
+<robot name="robot2">
+
+    <!-- Materials -->
+    <material name="grey">
+        <color rgba='0 0 0 1'/>
+    </material>
+    <material name="green">
+        <color rgba="0 0.6 0 1"/>
+    </material>
+    <material name="red">
+        <color rgba="0.6 0 0 1"/>
+    </material>
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+<!--///////////////////////// Links //////////////////////////////-->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.2 0.3 0.4"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="green"/>
+        </visual>
+    </link>
+
+    <link name="head_link">
+        <visual>
+            <geometry>
+                <sphere radius='0.1'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <link name="left_leg_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.3"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name="right_leg_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.3"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name="right_base_servo">
+        <visual>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+
+    <link name="right_shoulder_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.03 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <link name="right_shoulder_servo">
+        <visual>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="right_elbow_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.25 0.1"/>
+            </geometry>
+            <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <link name="right_elbow_servo">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+
+    <link name="right_wrist_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.35 0.04"/>
+            </geometry>
+            <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+<!-- Repeating the same structure for the left arm -->
+
+    <link name="base_servo">
+        <visual>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="shoulder_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.03 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <link name="shoulder_servo">
+        <visual>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="elbow_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.25 0.1"/>
+            </geometry>
+            <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
+            <material name="red"/>
+        </visual>
+    </link>    
+
+    <link name="elbow_servo">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="wrist_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.35 0.04"/>
+            </geometry>
+            <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+    
+<!--//////////////////////// Joints //////////////////////////////-->
+    <joint name="base_to_head_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="head_link"/>
+        <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_to_left_leg_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="left_leg_link"/>
+        <origin xyz="0 -0.1 -0.35" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_to_right_leg_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="right_leg_link"/>
+        <origin xyz="0 0.1 -0.35" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_to_right_base_servo_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_base_servo"/>
+        <origin xyz="0 -0.15 0.15" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="right_base_servo_to_right_shoulder_joint" type="fixed">
+        <parent link="right_base_servo"/>
+        <child link="right_shoulder_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="right_shoulder_to_right_shoulder_servo_joint" type="continuous">
+        <parent link="right_shoulder_link"/>
+        <child link="right_shoulder_servo"/>
+        <origin xyz="0 -0.02 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+    </joint>
+
+    <joint name="right_shoulder_servo_to_right_elbow_joint" type="fixed">
+        <parent link="right_shoulder_servo"/>
+        <child link="right_elbow_link"/>
+        <origin xyz="0 -0.03 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="right_elbow_to_right_elbow_servo_joint" type="continuous">
+        <parent link="right_elbow_link"/>
+        <child link="right_elbow_servo"/>
+        <origin xyz="0 0 -0.23" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="right_elbow_servo_to_right_wrist_joint" type="fixed">
+        <parent link="right_elbow_servo"/>
+        <child link="right_wrist_link"/>
+        <origin xyz="0 0 -0.03" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_to_base_servo_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="base_servo"/>
+        <origin xyz="0 0.15 0.15" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="base_servo_to_shoulder_joint" type="fixed">
+        <parent link="base_servo"/>
+        <child link="shoulder_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="shoulder_to_shoulder_servo_joint" type="continuous">
+        <parent link="shoulder_link"/>
+        <child link="shoulder_servo"/>
+        <origin xyz="0 0.02 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+    </joint>
+
+    <joint name="shoulder_servo_to_elbow_joint" type="fixed">
+        <parent link="shoulder_servo"/>
+        <child link="elbow_link"/>
+        <origin xyz="0 0.03 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="elbow_to_elbow_servo_joint" type="continuous">
+        <parent link="elbow_link"/>
+        <child link="elbow_servo"/>
+        <origin xyz="0 0 -0.23" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="elbow_servo_to_wrist_joint" type="fixed">
+        <parent link="elbow_servo"/>
+        <child link="wrist_link"/>
+        <origin xyz="0 0 -0.03" rpy="0 0 0"/>
+    </joint>
+</robot>

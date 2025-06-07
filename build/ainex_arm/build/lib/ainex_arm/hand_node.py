@@ -176,7 +176,7 @@ class HandNode(Node):
             else:
                 self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
 
-    def move_to_angles(self, target_angles, step_deg=2, step_delay=0.01):
+    def move_to_angles(self, target_angles, step_deg=10, step_delay=0.01):
         if self.hand == 'left':
             target_angles = [-angle for angle in target_angles]
 

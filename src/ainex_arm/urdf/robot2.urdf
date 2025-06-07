@@ -15,7 +15,9 @@
         <color rgba="1 1 1 1"/>
     </material>
 
-<!--///////////////////////// Links //////////////////////////////-->
+    <!--///////////////////////// Links //////////////////////////////-->
+    
+    <!-- base_link -->
     <link name="base_link">
         <visual>
             <geometry>
@@ -24,8 +26,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="green"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.2 0.3 0.4"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="1.0"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+        </inertial>
     </link>
 
+    <!-- head_link -->
     <link name="head_link">
         <visual>
             <geometry>
@@ -34,8 +48,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <sphere radius='0.1'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+        </inertial>
     </link>
 
+    <!-- left_leg_link -->
     <link name="left_leg_link">
         <visual>
             <geometry>
@@ -44,8 +70,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.3"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.7"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+        </inertial>
     </link>
 
+    <!-- right_leg_link -->
     <link name="right_leg_link">
         <visual>
             <geometry>
@@ -54,8 +92,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.3"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.7"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+        </inertial>
     </link>
 
+    <!-- right_base_servo -->
     <link name="right_base_servo">
         <visual>
             <geometry>
@@ -64,9 +114,20 @@
             <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
-
+    <!-- right_shoulder_link -->
     <link name="right_shoulder_link">
         <visual>
             <geometry>
@@ -75,8 +136,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.03 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.3"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+        </inertial>
     </link>
 
+    <!-- right_shoulder_servo -->
     <link name="right_shoulder_servo">
         <visual>
             <geometry>
@@ -85,8 +158,20 @@
             <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
+    <!-- right_elbow_link -->
     <link name="right_elbow_link">
         <visual>
             <geometry>
@@ -95,8 +180,20 @@
             <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.25 0.1"/>
+            </geometry>
+            <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+            <inertia ixx="0.004" ixy="0.0" ixz="0.0" iyy="0.004" iyz="0.0" izz="0.004"/>
+        </inertial>
     </link>
 
+    <!-- right_elbow_servo -->
     <link name="right_elbow_servo">
         <visual>
             <geometry>
@@ -105,9 +202,20 @@
             <origin xyz="0 0 0" rpy="1.5708 0 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
-
+    <!-- right_wrist_link -->
     <link name="right_wrist_link">
         <visual>
             <geometry>
@@ -116,10 +224,20 @@
             <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.1 0.35 0.04"/>
+            </geometry>
+            <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <origin xyz="0.17 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.003" ixy="0.0" ixz="0.0" iyy="0.003" iyz="0.0" izz="0.003"/>
+        </inertial>
     </link>
 
-<!-- Repeating the same structure for the left arm -->
-
+    <!-- base_servo -->
     <link name="base_servo">
         <visual>
             <geometry>
@@ -128,8 +246,20 @@
             <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
+    <!-- shoulder_link -->
     <link name="shoulder_link">
         <visual>
             <geometry>
@@ -138,8 +268,20 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.03 0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.3"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+        </inertial>
     </link>
 
+    <!-- shoulder_servo -->
     <link name="shoulder_servo">
         <visual>
             <geometry>
@@ -148,8 +290,20 @@
             <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius='0.03' length='0.02'/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
+    <!-- elbow_link -->
     <link name="elbow_link">
         <visual>
             <geometry>
@@ -158,8 +312,20 @@
             <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
             <material name="red"/>
         </visual>
-    </link>    
+        <collision>
+            <geometry>
+                <box size="0.05 0.25 0.1"/>
+            </geometry>
+            <origin xyz="0 0 -0.1" rpy="1.5708 0 1.5708"/>
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+            <inertia ixx="0.004" ixy="0.0" ixz="0.0" iyy="0.004" iyz="0.0" izz="0.004"/>
+        </inertial>
+    </link>
 
+    <!-- elbow_servo -->
     <link name="elbow_servo">
         <visual>
             <geometry>
@@ -168,8 +334,20 @@
             <origin xyz="0 0 0" rpy="1.5708 0 0"/>
             <material name="white"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.02"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
     </link>
 
+    <!-- wrist_link -->
     <link name="wrist_link">
         <visual>
             <geometry>
@@ -178,6 +356,17 @@
             <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.1 0.35 0.04"/>
+            </geometry>
+            <origin xyz="0.17 0 0" rpy="1.5708 1.5708 0"/>
+        </collision>
+        <inertial>
+            <mass value="0.4"/>
+            <origin xyz="0.17 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.003" ixy="0.0" ixz="0.0" iyy="0.003" iyz="0.0" izz="0.003"/>
+        </inertial>
     </link>
     
 <!--//////////////////////// Joints //////////////////////////////-->

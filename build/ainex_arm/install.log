@@ -1,13 +1,5 @@
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/salute_node.py
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/left_hand_salute_node.py
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/left_hand_wave_node.py
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/wave_node.py
 /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__init__.py
 /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/hand_node.py
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/salute_node.cpython-312.pyc
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/left_hand_salute_node.cpython-312.pyc
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/left_hand_wave_node.cpython-312.pyc
-/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/wave_node.cpython-312.pyc
 /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/__init__.cpython-312.pyc
 /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__pycache__/hand_node.cpython-312.pyc
 /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index/packages/ainex_arm

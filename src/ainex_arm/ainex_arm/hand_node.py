@@ -176,7 +176,7 @@ class HandNode(Node):
             else:
                 self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
 
-    def move_to_angles(self, target_angles, step_deg=10, step_delay=0.01):
+    def move_to_angles(self, target_angles, step_deg=15, step_delay=0.01):
         if self.hand == 'left':
             target_angles = [-angle for angle in target_angles]
 
@@ -198,7 +198,7 @@ class HandNode(Node):
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
         self.update_and_publish_joint_states(target_angles)
 
-    def move_both_hands_to_angles(self, angles, step_deg=2, step_delay=0.01):
+    def move_both_hands_to_angles(self, angles, step_deg=10, step_delay=0.01):
         # angles: [right1, right2, right3, left1, left2, left3]
         current_angles = self.read_current_angles_both()
         steps = int(max(abs(t - c) for t, c in zip(angles, current_angles)) // step_deg) + 1

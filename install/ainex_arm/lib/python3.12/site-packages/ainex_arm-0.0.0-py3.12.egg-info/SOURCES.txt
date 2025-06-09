@@ -10,10 +10,6 @@ setup.py
 ../../build/ainex_arm/ainex_arm.egg-info/zip-safe
 ainex_arm/__init__.py
 ainex_arm/hand_node.py
-ainex_arm/left_hand_salute_node.py
-ainex_arm/left_hand_wave_node.py
-ainex_arm/salute_node.py
-ainex_arm/wave_node.py
 resource/ainex_arm
 test/test_copyright.py
 test/test_flake8.py

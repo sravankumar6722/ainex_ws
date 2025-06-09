@@ -58,7 +58,7 @@ class HandNode(Node):
             action_topic = 'left_hand_action'
             result_topic = 'left_hand_action_result'
             angles_topic = 'left_servo_angles'
-            self.default_step_delay = 0.0001
+            self.default_step_delay = 0.01
             self.joint_names = [
                 'base_to_base_servo_joint',
                 'shoulder_to_shoulder_servo_joint',
@@ -140,7 +140,7 @@ class HandNode(Node):
                     return
                 current_angles = [pos * 180.0 / 3.14159265 for pos in current_positions]
                 self.external_control_active = True
-                self.move_both_hands_to_angles(current_angles, step_delay=0.001)
+                self.move_both_hands_to_angles(current_angles, step_delay=0.01)
                 self.external_control_active = False
             else:
                 if len(indices) != 3:
@@ -149,7 +149,7 @@ class HandNode(Node):
                 if self.hand == 'left':
                     current_angles[0] = -current_angles[0]
                 self.external_control_active = True
-                self.move_to_angles(current_angles, step_delay=0.001)
+                self.move_to_angles(current_angles, step_delay=0.01)
                 self.external_control_active = False
 
             self.last_servo_update = time.time()

@@ -71,9 +71,12 @@ include /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFile
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py
+/home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/__init__.py
+/home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/__init__.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c
+/home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
 
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -90,9 +93,15 @@ rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -108,8 +117,14 @@ rosidl_generator_py/ainex_interfaces/srv/_move_hand.py: rosidl_generator_py/aine
 rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py
 
+rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
+
 rosidl_generator_py/ainex_interfaces/srv/__init__.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/__init__.py
+
+rosidl_generator_py/ainex_interfaces/action/__init__.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/action/__init__.py
 
 rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c
@@ -117,10 +132,16 @@ rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c: rosidl_generator_py/ain
 rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c
 
+rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
+
 ainex_interfaces__py: /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/__init__.py
+ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
+ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/__init__.py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand.py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c

@@ -77,14 +77,23 @@ rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ro
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
+rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp: /opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
 rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp: rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp
+
+rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp: rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp
 
 CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o: rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp
@@ -114,28 +123,48 @@ CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/a
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp -o CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.s
 
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o: rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o -MF CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o.d -o CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp
+
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp > CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.i
+
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp -o CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.s
+
 # Object files for target ainex_interfaces__rosidl_typesupport_cpp
 ainex_interfaces__rosidl_typesupport_cpp_OBJECTS = \
 "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o" \
-"CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.o"
+"CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.o" \
+"CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o"
 
 # External object files for target ainex_interfaces__rosidl_typesupport_cpp
 ainex_interfaces__rosidl_typesupport_cpp_EXTERNAL_OBJECTS =
 
 libainex_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o
 libainex_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.o
+libainex_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o
 libainex_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/build.make
 libainex_interfaces__rosidl_typesupport_cpp.so: libainex_interfaces__rosidl_generator_c.so
+libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
+libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libainex_interfaces__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librcutils.so
 libainex_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libainex_interfaces__rosidl_typesupport_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libainex_interfaces__rosidl_typesupport_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +175,7 @@ CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/clean
 
+CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp
 CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp
 CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp
 	cd /home/vgi/ainex_ws/build/ainex_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vgi/ainex_ws/src/ainex_interfaces /home/vgi/ainex_ws/src/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/DependInfo.cmake "--color=$(COLOR)"

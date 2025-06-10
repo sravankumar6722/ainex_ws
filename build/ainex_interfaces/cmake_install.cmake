@@ -55,6 +55,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/action" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ainex_interfaces/ainex_interfaces" TYPE DIRECTORY FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -375,11 +379,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/action" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/src/ainex_interfaces/srv/MoveHand.srv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/src/ainex_interfaces/srv/RunGesture.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/action" TYPE FILE FILES "/home/vgi/ainex_ws/src/ainex_interfaces/action/ExecuteGesture.action")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

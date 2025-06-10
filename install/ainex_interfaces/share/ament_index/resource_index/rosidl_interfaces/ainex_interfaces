@@ -1,3 +1,5 @@
+action/ExecuteGesture.action
+action/ExecuteGesture.idl
 srv/MoveHand.idl
 srv/MoveHand.srv
 srv/RunGesture.idl

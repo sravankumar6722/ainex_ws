@@ -5,12 +5,15 @@ from std_msgs.msg import String, Float32MultiArray
 from sensor_msgs.msg import JointState
 import time
 import os
+import asyncio
 import pandas as pd
 import numpy as np
 from robot_arm.scservo_sdk import *
 
-# Import your custom services
+# Import your custom services and actions
 from ainex_interfaces.srv import RunGesture, MoveHand
+from ainex_interfaces.action import ExecuteGesture
+from rclpy.action import ActionServer
 
 # Servo Configuration
 BAUDRATE = 1000000
@@ -108,6 +111,14 @@ class HandNode(Node):
         self.srv = self.create_service(MoveHand, 'move_hand', self.handle_move_hand_service)
         self.gesture_srv = self.create_service(RunGesture, 'run_gesture', self.handle_run_gesture_service)
 
+        # Action server for ExecuteGesture
+        self.gesture_action_server = ActionServer(
+            self,
+            ExecuteGesture,
+            'execute_gesture',
+            self.execute_gesture_action_callback
+        )
+
         self.portHandler = PortHandler(DEVICENAME)
         self.packetHandler = PacketHandler(PROTOCOL_END)
 
@@ -157,6 +168,44 @@ class HandNode(Node):
             response.success = False
             response.message = "Gesture file not found"
         return response
+
+    async def execute_gesture_action_callback(self, goal_handle):
+        gesture = goal_handle.request.gesture_name
+        feedback_msg = ExecuteGesture.Feedback()
+        sheet_file = os.path.join(EXCEL_FOLDER, f'{gesture}_sheet.xlsx')
+        result = ExecuteGesture.Result()
+
+        if not os.path.exists(sheet_file):
+            result.success = False
+            result.message = "Gesture file not found"
+            goal_handle.abort()
+            return result
+
+        feedback_msg.status = "Starting gesture"
+        goal_handle.publish_feedback(feedback_msg)
+
+        try:
+            df = pd.read_excel(sheet_file)
+            for idx, row in df.iterrows():
+                if self.hand == 'both':
+                    angles = [row[f'Servo{i}'] for i in range(1, 7)]
+                    self.move_both_hands_to_angles(angles)
+                else:
+                    angles = [row['Servo1'], row['Servo2'], row['Servo3']]
+                    if self.hand == 'left':
+                        angles = [-angle for angle in angles]
+                    self.move_to_angles(angles)
+                feedback_msg.status = f"Step {idx+1} completed"
+                goal_handle.publish_feedback(feedback_msg)
+                await asyncio.sleep(float(row['Delay']) if 'Delay' in row else 1.0)
+            result.success = True
+            result.message = "Gesture executed"
+            goal_handle.succeed()
+        except Exception as e:
+            result.success = False
+            result.message = str(e)
+            goal_handle.abort()
+        return result
 
     def joint_state_callback(self, msg):
         try:

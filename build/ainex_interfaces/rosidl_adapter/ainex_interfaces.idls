@@ -1,2 +1,3 @@
 /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:srv/MoveHand.idl
 /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:srv/RunGesture.idl
+/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:action/ExecuteGesture.idl

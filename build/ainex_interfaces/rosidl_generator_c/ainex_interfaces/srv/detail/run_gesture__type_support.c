@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
+#include "ainex_interfaces/srv/detail/run_gesture__type_support.h"
 #include "ainex_interfaces/srv/detail/run_gesture__struct.h"
 #include "ainex_interfaces/srv/detail/run_gesture__functions.h"
-#include "ainex_interfaces/srv/detail/run_gesture__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

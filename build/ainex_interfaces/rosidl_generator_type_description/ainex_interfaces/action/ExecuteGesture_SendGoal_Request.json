@@ -1,0 +1,75 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request",
+      "fields": [
+        {
+          "name": "goal_id",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "unique_identifier_msgs/msg/UUID"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Goal"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+        "fields": [
+          {
+            "name": "gesture_name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request",
+      "hash_string": "RIHS01_c164b28819ac08d5d6579ed3e2a0be64f5a81d74f72b108e70ae2c2597deb1f4"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+      "hash_string": "RIHS01_4c39f4681e2b0ee9200acc55d067ec7e9a651d62474033c373fd16e87531d6c9"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

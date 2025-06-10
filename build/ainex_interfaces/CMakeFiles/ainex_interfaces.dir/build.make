@@ -68,7 +68,12 @@ include CMakeFiles/ainex_interfaces.dir/progress.make
 
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/MoveHand.srv
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/RunGesture.srv
+CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/action/ExecuteGesture.action
 CMakeFiles/ainex_interfaces: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
+CMakeFiles/ainex_interfaces: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl
+CMakeFiles/ainex_interfaces: /opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl
+CMakeFiles/ainex_interfaces: /opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl
+CMakeFiles/ainex_interfaces: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
 
 ainex_interfaces: CMakeFiles/ainex_interfaces
 ainex_interfaces: CMakeFiles/ainex_interfaces.dir/build.make

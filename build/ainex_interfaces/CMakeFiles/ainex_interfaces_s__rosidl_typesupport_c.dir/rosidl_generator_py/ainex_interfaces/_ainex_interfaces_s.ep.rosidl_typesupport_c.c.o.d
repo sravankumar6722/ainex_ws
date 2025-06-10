@@ -236,4 +236,8 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/aine
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__type_support.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__struct.h \
- /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__functions.h
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__functions.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h \
+ /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.h

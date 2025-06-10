@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+      "fields": [
+        {
+          "name": "gesture_name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+      "hash_string": "RIHS01_4c39f4681e2b0ee9200acc55d067ec7e9a651d62474033c373fd16e87531d6c9"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Feedback",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Feedback",
+      "hash_string": "RIHS01_96edca96235da148481b7e0b7a581a03654f3e2826f8ca5e162e6948ba954115"
+    }
+  ]
+}

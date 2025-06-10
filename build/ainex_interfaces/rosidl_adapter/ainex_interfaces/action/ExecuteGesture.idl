@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from ainex_interfaces/action/ExecuteGesture.action
+// generated code does not contain a copyright notice
+
+
+module ainex_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct ExecuteGesture_Goal {
+      string gesture_name;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct ExecuteGesture_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct ExecuteGesture_Feedback {
+      string status;
+    };
+  };
+};

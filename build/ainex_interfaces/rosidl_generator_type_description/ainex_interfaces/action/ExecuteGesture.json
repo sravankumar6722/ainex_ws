@@ -1,0 +1,532 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ainex_interfaces/action/ExecuteGesture",
+      "fields": [
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Goal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Result"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Feedback"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "send_goal_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "get_result_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ainex_interfaces/action/ExecuteGesture_FeedbackMessage"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_Feedback",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_FeedbackMessage",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "feedback",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Feedback"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Response",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "result",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Result"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+        "fields": [
+          {
+            "name": "gesture_name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_Result",
+        "fields": [
+          {
+            "name": "success",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "message",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ainex_interfaces/action/ExecuteGesture_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture",
+      "hash_string": "RIHS01_59a301936145d5e216e2f872e7db44be33752401e5bee048b3a137048e92ffa4"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Feedback",
+      "hash_string": "RIHS01_96edca96235da148481b7e0b7a581a03654f3e2826f8ca5e162e6948ba954115"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_FeedbackMessage",
+      "hash_string": "RIHS01_e2e713c51887b32de6f2ad4c936ee3567c3ada3bf10946632a24ad9d702504b8"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult",
+      "hash_string": "RIHS01_792793659a78d21ae25605f659384b433aa9d421a2fbcc5cbef66e9734c683ea"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Event",
+      "hash_string": "RIHS01_b3cb058de1a86a99b2f9f98f219689022d493fe7eb341e0fa4b6683eabfec084"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Request",
+      "hash_string": "RIHS01_45ebe38625830229b9b68024609d130da48fb8b98dad1775bf48cbc815a2fb3d"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_GetResult_Response",
+      "hash_string": "RIHS01_55601ea0a3df529e4f4cc1e1a6e4820a0005b88a50a36e4b0819e32142211652"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Goal",
+      "hash_string": "RIHS01_4c39f4681e2b0ee9200acc55d067ec7e9a651d62474033c373fd16e87531d6c9"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_Result",
+      "hash_string": "RIHS01_8eeb401b0b7b62e179f776f864a87e7cfe3e617844016958dcf77ee7d4821d35"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal",
+      "hash_string": "RIHS01_6e7b43990c41b930588da82dbb390caaa370d34e81793d4c27a7efbb57bd3d8b"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Event",
+      "hash_string": "RIHS01_6f0f6d26aaf5f3faecdcceed436204f23a054025a0710da3ecc00e928316fb2b"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Request",
+      "hash_string": "RIHS01_c164b28819ac08d5d6579ed3e2a0be64f5a81d74f72b108e70ae2c2597deb1f4"
+    },
+    {
+      "type_name": "ainex_interfaces/action/ExecuteGesture_SendGoal_Response",
+      "hash_string": "RIHS01_69479b4b64cc66f0af0b0421f44b5cfd913803119026338cb3886abc8a9dced6"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

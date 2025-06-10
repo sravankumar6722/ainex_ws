@@ -76,6 +76,11 @@ CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/deta
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__struct.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__builder.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__struct.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__traits.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -99,9 +104,15 @@ rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/ro
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -132,10 +143,30 @@ rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp: rosidl
 rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp
 
+rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp
+
+rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__builder.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__builder.hpp
+
+rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__struct.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__struct.hpp
+
+rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__traits.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__traits.hpp
+
+rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.hpp
+
 rosidl_generator_cpp/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 ainex_interfaces__cpp: CMakeFiles/ainex_interfaces__cpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__builder.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__struct.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__traits.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/move_hand__builder.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/move_hand__struct.hpp

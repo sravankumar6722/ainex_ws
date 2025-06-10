@@ -11,6 +11,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/MoveHand.srv"
   "srv/RunGesture.srv"
+  "action/ExecuteGesture.action"
 )
 
 if(BUILD_TESTING)

@@ -1,0 +1,7 @@
+{
+  "package_name": "ainex_interfaces",
+  "non_idl_tuples": [
+    "/home/vgi/ainex_ws/src/ainex_interfaces:srv/MoveHand.srv",
+    "/home/vgi/ainex_ws/src/ainex_interfaces:srv/RunGesture.srv"
+  ]
+}

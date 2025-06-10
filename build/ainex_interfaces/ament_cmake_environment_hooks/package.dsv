@@ -1,0 +1,4 @@
+source;share/ainex_interfaces/local_setup.bash
+source;share/ainex_interfaces/local_setup.dsv
+source;share/ainex_interfaces/local_setup.sh
+source;share/ainex_interfaces/local_setup.zsh

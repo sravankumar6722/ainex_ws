@@ -9,6 +9,9 @@ import pandas as pd
 import numpy as np
 from robot_arm.scservo_sdk import *
 
+# Import your custom services
+from ainex_interfaces.srv import RunGesture, MoveHand
+
 # Servo Configuration
 BAUDRATE = 1000000
 DEVICENAME = '/dev/ttyACM0'
@@ -101,6 +104,10 @@ class HandNode(Node):
         self.joint_state_sub = self.create_subscription(JointState, 'joint_states', self.joint_state_callback, 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
 
+        # Service servers for MoveHand and RunGesture
+        self.srv = self.create_service(MoveHand, 'move_hand', self.handle_move_hand_service)
+        self.gesture_srv = self.create_service(RunGesture, 'run_gesture', self.handle_run_gesture_service)
+
         self.portHandler = PortHandler(DEVICENAME)
         self.packetHandler = PacketHandler(PROTOCOL_END)
 
@@ -118,6 +125,38 @@ class HandNode(Node):
             self.move_both_hands_to_angles([0,0,0,0,0,0], step_delay=self.default_step_delay)
         else:
             self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)
+
+    def handle_move_hand_service(self, request, response):
+        try:
+            if self.hand == 'both' and len(request.angles) == 6:
+                self.move_both_hands_to_angles(request.angles)
+            elif len(request.angles) == 3:
+                self.move_to_angles(request.angles)
+            else:
+                response.success = False
+                response.message = "Invalid number of angles"
+                return response
+            response.success = True
+            response.message = "Moved successfully"
+        except Exception as e:
+            response.success = False
+            response.message = str(e)
+        return response
+
+    def handle_run_gesture_service(self, request, response):
+        gesture = request.gesture_name
+        sheet_file = os.path.join(EXCEL_FOLDER, f'{gesture}_sheet.xlsx')
+        if os.path.exists(sheet_file):
+            if self.hand == 'both':
+                self.execute_both_hands_gesture(sheet_file)
+            else:
+                self.execute_gesture(sheet_file)
+            response.success = True
+            response.message = "Gesture executed"
+        else:
+            response.success = False
+            response.message = "Gesture file not found"
+        return response
 
     def joint_state_callback(self, msg):
         try:
@@ -198,7 +237,7 @@ class HandNode(Node):
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
         self.update_and_publish_joint_states(target_angles)
 
-    def move_both_hands_to_angles(self, angles, step_deg=10, step_delay=0.01):
+    def move_both_hands_to_angles(self, angles, step_deg=15, step_delay=0.001):
         # angles: [right1, right2, right3, left1, left2, left3]
         current_angles = self.read_current_angles_both()
         steps = int(max(abs(t - c) for t, c in zip(angles, current_angles)) // step_deg) + 1

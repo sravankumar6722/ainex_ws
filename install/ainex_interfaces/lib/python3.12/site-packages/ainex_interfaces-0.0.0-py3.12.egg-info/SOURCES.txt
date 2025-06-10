@@ -1,0 +1,9 @@
+setup.py
+ainex_interfaces/__init__.py
+ainex_interfaces.egg-info/PKG-INFO
+ainex_interfaces.egg-info/SOURCES.txt
+ainex_interfaces.egg-info/dependency_links.txt
+ainex_interfaces.egg-info/top_level.txt
+ainex_interfaces/srv/__init__.py
+ainex_interfaces/srv/_move_hand.py
+ainex_interfaces/srv/_run_gesture.py

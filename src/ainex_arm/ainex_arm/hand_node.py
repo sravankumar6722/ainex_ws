@@ -8,7 +8,7 @@ import os
 import asyncio
 import pandas as pd
 import numpy as np
-from robot_arm.scservo_sdk import *
+from ainex_arm.scservo_sdk import *
 
 # Import your custom services and actions
 from ainex_interfaces.srv import RunGesture, MoveHand

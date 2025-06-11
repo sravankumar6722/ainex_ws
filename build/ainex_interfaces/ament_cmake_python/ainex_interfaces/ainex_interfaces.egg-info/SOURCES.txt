@@ -9,3 +9,4 @@ ainex_interfaces/action/_execute_gesture.py
 ainex_interfaces/srv/__init__.py
 ainex_interfaces/srv/_move_hand.py
 ainex_interfaces/srv/_run_gesture.py
+ainex_interfaces/srv/_set_motion_params.py

@@ -30,7 +30,7 @@ ros2 pkg create --build-type ament_cmake ainex_interfaces
 
 ### 3. Add Custom Interfaces
 
-- Place your `.srv` files (e.g., `MoveHand.srv`, `RunGesture.srv`) and `.action` files (e.g., `ExecuteGesture.action`) in `ainex_ws/src/ainex_interfaces/srv/` and `ainex_ws/src/ainex_interfaces/action/` respectively.
+- Place your `.srv` files (e.g., `MoveHand.srv`, `RunGesture.srv`, `SetServoParam.srv`) and `.action` files (e.g., `ExecuteGesture.action`) in `ainex_ws/src/ainex_interfaces/srv/` and `ainex_ws/src/ainex_interfaces/action/` respectively.
 - Update `CMakeLists.txt` and `package.xml` in `ainex_interfaces` as per ROS 2 interface conventions.
 
 ### 4. Build the Workspace
@@ -96,7 +96,14 @@ ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30
 ros2 service call /run_gesture ainex_interfaces/srv/RunGesture "{gesture_name: 'wave'}"
 ```
 
-### 5. Run a Gesture by Name via Action
+### 5. set parameters while running via Service
+
+```bash
+ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{speed: 1000, acceleration: 240, step_degree: 10}"
+```
+
+
+### 6. Run a Gesture by Name via Action
 
 ```bash
 ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{gesture_name: 'wave'}"
@@ -183,6 +190,12 @@ ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30
 
 ```bash
 ros2 service call /run_gesture ainex_interfaces/srv/RunGesture "{gesture_name: 'wave'}"
+```
+
+### set parameters while running via Service
+
+```bash
+ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{speed: 1000, acceleration: 240, step_degree: 10}"
 ```
 
 ### Run a Gesture by Name via Action

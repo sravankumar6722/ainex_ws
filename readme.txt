@@ -142,54 +142,28 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 
 ---------------------------------- |Commands |------------------------------------
 
-### Run the Node
-
 For right hand:
-```bash
 ros2 run ainex_arm hand_node --ros-args -p hand:=right
-```
+
 For left hand:
-```bash
 ros2 run ainex_arm hand_node --ros-args -p hand:=left
-```
+
 For both hands:
-```bash
 ros2 run ainex_arm hand_node --ros-args -p hand:=both
-```
 
-### Send Gesture Commands via Topic
-
-```bash
+Topic
 ros2 topic pub --once hand_action std_msgs/String "{data: 'wave'}"
 ros2 topic pub --once left_hand_action std_msgs/String "{data: 'left_wave'}"
 ros2 topic pub --once both_hands_action std_msgs/String "{data: 'both_hands_point'}"
-```
 
-### Move Hand(s) to Specific Angles via Service
-
-```bash
+Service:
 ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30]}"
 ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30, 40, 50, 60]}"
-```
-- Use 3 angles for right/left, 6 for both.
-
-### Run a Gesture by Name via Service
-
-```bash
 ros2 service call /run_gesture ainex_interfaces/srv/RunGesture "{gesture_name: 'wave'}"
-```
-
-### set parameters while running via Service
-
-```bash
 ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{speed: 1000, acceleration: 240, step_degree: 10}"
-```
 
-### Run a Gesture by Name via Action
-
-```bash
+Action:
 ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{gesture_name: 'wave'}"
-```
 
 -------------------| Troubleshooting |----------------
 

@@ -59,9 +59,8 @@ source install/setup.bash
 Open a terminal and run (choose one):
 
 ```bash
-ros2 run ainex_arm hand_node --ros-args -p hand:=left
-ros2 run ainex_arm hand_node --ros-args -p hand:=right
-ros2 run ainex_arm hand_node --ros-args -p hand:=both
+
+ros2 run ainex_arm hand_node 
 ```
 
 You can run multiple nodes in separate terminals for independent or synchronized control.
@@ -71,18 +70,14 @@ You can run multiple nodes in separate terminals for independent or synchronized
 Open another terminal and publish a gesture command:
 
 ```bash
-ros2 topic pub --once hand_action std_msgs/String "{data: 'wave'}"
-ros2 topic pub --once left_hand_action std_msgs/String "{data: 'left_wave'}"
 ros2 topic pub --once both_hands_action std_msgs/String "{data: 'both_hands_point'}"
 ```
 
 ### 3. Move Hand(s) to Specific Angles via Service
 
 ```bash
-ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30]}"
 ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30, 40, 50, 60]}"
 ```
-- Use 3 angles for right/left, 6 for both.
 
 ### 4. Run a Gesture by Name via Service
 
@@ -106,15 +101,9 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 
 
 | Name                        | Type                                   | Description                                  |
-|-----------------------------|----------------------------------------|----------------------------------------------|
-| `/hand_action`              | `std_msgs/String`                      | Command gestures for the right hand          |
-| `/hand_action_result`       | `std_msgs/String`                      | Result/feedback from right hand node         |
-| `/left_hand_action`         | `std_msgs/String`                      | Command gestures for the left hand           |
-| `/left_hand_action_result`  | `std_msgs/String`                      | Result/feedback from left hand node          |
+|-----------------------------|----------------------------------------|----------------------------------------------|        |
 | `/both_hands_action`        | `std_msgs/String`                      | Command gestures for both hands              |
 | `/both_hands_action_result` | `std_msgs/String`                      | Result/feedback from both hands node         |
-| `/servo_angles`             | `std_msgs/Float32MultiArray`           | Current angles of right hand servos          |
-| `/left_servo_angles`        | `std_msgs/Float32MultiArray`           | Current angles of left hand servos           |
 | `/both_servo_angles`        | `std_msgs/Float32MultiArray`           | Current angles of both hands servos          |
 | `/joint_states`             | `sensor_msgs/JointState`               | All joint states for RViz/robot_state_publisher |
 | `/move_hand`                | `ainex_interfaces/srv/MoveHand`        | Service to move hand(s) to specific angles   |
@@ -142,22 +131,13 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 
 ---------------------------------- |Commands |------------------------------------
 
-For right hand:
-ros2 run ainex_arm hand_node --ros-args -p hand:=right
-
-For left hand:
-ros2 run ainex_arm hand_node --ros-args -p hand:=left
-
 For both hands:
 ros2 run ainex_arm hand_node --ros-args -p hand:=both
 
 Topic
-ros2 topic pub --once hand_action std_msgs/String "{data: 'wave'}"
-ros2 topic pub --once left_hand_action std_msgs/String "{data: 'left_wave'}"
 ros2 topic pub --once both_hands_action std_msgs/String "{data: 'both_hands_point'}"
 
 Service:
-ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30]}"
 ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30, 40, 50, 60]}"
 ros2 service call /run_gesture ainex_interfaces/srv/RunGesture "{gesture_name: 'wave'}"
 ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{speed: 1000, acceleration: 240, step_degree: 10}"

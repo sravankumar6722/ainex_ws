@@ -21,10 +21,6 @@ setup(
     entry_points={
         'console_scripts': [
             'hand_node = ainex_arm.hand_node:main',
-            'wave_node = ainex_arm.wave_node:main',
-            'salute_node = ainex_arm.salute_node:main',
-            'left_hand_wave = ainex_arm.left_hand_wave_node:main',
-            'left_hand_salute = ainex_arm.left_hand_salute_node:main',
         ],
     },
 )

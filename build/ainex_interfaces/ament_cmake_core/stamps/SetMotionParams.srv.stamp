@@ -1,0 +1,6 @@
+int32 speed
+int32 acceleration
+float32 step_degree
+---
+bool success
+string message

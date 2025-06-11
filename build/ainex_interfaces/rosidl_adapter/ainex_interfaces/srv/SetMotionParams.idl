@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ainex_interfaces/srv/SetMotionParams.srv
+// generated code does not contain a copyright notice
+
+
+module ainex_interfaces {
+  module srv {
+    struct SetMotionParams_Request {
+      int32 speed;
+
+      int32 acceleration;
+
+      float step_degree;
+    };
+    struct SetMotionParams_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

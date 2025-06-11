@@ -79,6 +79,7 @@ rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
+rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -94,6 +95,9 @@ rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_c.h
 
@@ -102,6 +106,9 @@ rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_s
 
 rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c
+
+rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
 
 rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
@@ -134,10 +141,24 @@ CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c -o CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c.s
 
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o -MF CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
+
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c > CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.i
+
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c -o CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.s
+
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o -MF CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
 
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.i: cmake_force
@@ -152,6 +173,7 @@ CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_types
 ainex_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c.o" \
+"CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
 
 # External object files for target ainex_interfaces__rosidl_typesupport_introspection_c
@@ -159,6 +181,7 @@ ainex_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o
 libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c.o
+libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o
 libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o
 libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libainex_interfaces__rosidl_typesupport_introspection_c.so: libainex_interfaces__rosidl_generator_c.so
@@ -174,7 +197,7 @@ libainex_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/l
 libainex_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libainex_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librcutils.so
 libainex_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libainex_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libainex_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +214,8 @@ CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosi
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_support.c
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_introspection_c.h
 CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/run_gesture__type_support.c
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_c.h
+CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
 	cd /home/vgi/ainex_ws/build/ainex_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vgi/ainex_ws/src/ainex_interfaces /home/vgi/ainex_ws/src/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces /home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

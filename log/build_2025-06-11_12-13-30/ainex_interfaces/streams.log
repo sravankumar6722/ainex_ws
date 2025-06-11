@@ -1,0 +1,18 @@
+[0.453s] Invoking command in '/home/vgi/ainex_ws/build/ainex_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vgi/ainex_ws/build/ainex_interfaces -- -j4 -l4
+[0.542s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.613s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.847s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.855s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.949s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.034s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.042s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[1.043s]   rosidl_generate_interfaces() the passed file 'srv/SetmotionParams.srv'
+[1.043s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[1.043s]   '/home/vgi/ainex_ws/src/ainex_interfaces'
+[1.043s] Call Stack (most recent call first):
+[1.043s]   CMakeLists.txt:11 (rosidl_generate_interfaces)
+[1.043s] 
+[1.043s] [0m
+[1.044s] -- Configuring incomplete, errors occurred!
+[1.055s] gmake: *** [Makefile:1355: cmake_check_build_system] Error 1
+[1.059s] Invoked command in '/home/vgi/ainex_ws/build/ainex_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vgi/ainex_ws/build/ainex_interfaces -- -j4 -l4

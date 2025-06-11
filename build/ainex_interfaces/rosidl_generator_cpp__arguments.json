@@ -5,6 +5,7 @@
   "idl_tuples": [
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:srv/MoveHand.idl",
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:srv/RunGesture.idl",
+    "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:srv/SetMotionParams.idl",
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces:action/ExecuteGesture.idl"
   ],
   "ros_interface_dependencies": [
@@ -39,6 +40,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/srv/MoveHand.idl",
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/srv/RunGesture.idl",
+    "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl",
     "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -52,6 +54,7 @@
   "type_description_tuples": [
     "srv/MoveHand.idl:/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json",
     "srv/RunGesture.idl:/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json",
+    "srv/SetMotionParams.idl:/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json",
     "action/ExecuteGesture.idl:/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json"
   ]
 }

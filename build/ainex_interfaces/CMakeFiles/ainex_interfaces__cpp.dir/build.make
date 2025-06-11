@@ -76,6 +76,11 @@ CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/deta
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__struct.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp
+CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__builder.hpp
 CMakeFiles/ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/action/detail/execute_gesture__struct.hpp
@@ -104,6 +109,7 @@ rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/ro
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
+rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -143,6 +149,21 @@ rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp: rosidl
 rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp
 
+rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp
+
+rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp
+
+rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp
+
+rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp
+
+rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp
+
 rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ainex_interfaces/action/execute_gesture.hpp
 
@@ -176,8 +197,13 @@ ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gest
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__struct.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp
 ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/run_gesture.hpp
+ainex_interfaces__cpp: rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp
 ainex_interfaces__cpp: CMakeFiles/ainex_interfaces__cpp.dir/build.make
 .PHONY : ainex_interfaces__cpp
 

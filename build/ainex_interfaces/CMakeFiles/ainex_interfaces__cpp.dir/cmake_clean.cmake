@@ -14,8 +14,13 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__struct.hpp"
   "rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp"
   "rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp"
+  "rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp"
+  "rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp"
+  "rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp"
+  "rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp"
   "rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
   "rosidl_generator_cpp/ainex_interfaces/srv/run_gesture.hpp"
+  "rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -22,6 +22,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_set_motion_params.py" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

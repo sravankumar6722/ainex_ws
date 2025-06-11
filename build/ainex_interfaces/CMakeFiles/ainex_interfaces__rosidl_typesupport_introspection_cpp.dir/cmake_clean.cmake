@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.cpp.o.d"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp.o"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp.o.d"
   "libainex_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libainex_interfaces__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_cpp.hpp"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

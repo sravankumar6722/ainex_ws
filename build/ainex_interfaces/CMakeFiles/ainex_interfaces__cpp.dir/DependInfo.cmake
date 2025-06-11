@@ -26,7 +26,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__struct.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__traits.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__builder.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__struct.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__traits.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/run_gesture.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/set_motion_params.hpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_cpp/ainex_interfaces/srv/move_hand.hpp"
   )
 
 

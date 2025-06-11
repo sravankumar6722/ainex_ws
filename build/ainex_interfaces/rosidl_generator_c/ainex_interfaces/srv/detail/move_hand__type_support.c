@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "ainex_interfaces/srv/detail/move_hand__type_support.h"
-#include "ainex_interfaces/srv/detail/move_hand__functions.h"
 #include "ainex_interfaces/srv/detail/move_hand__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "ainex_interfaces/srv/detail/move_hand__functions.h"
+#include "ainex_interfaces/srv/detail/move_hand__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

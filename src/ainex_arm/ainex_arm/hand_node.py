@@ -13,6 +13,7 @@ from robot_arm.scservo_sdk import *
 # Import your custom services and actions
 from ainex_interfaces.srv import RunGesture, MoveHand
 from ainex_interfaces.action import ExecuteGesture
+from ainex_interfaces.srv import SetMotionParams  # <-- Add this import after creating the srv
 from rclpy.action import ActionServer
 
 # Servo Configuration
@@ -33,7 +34,7 @@ MAX_RAW_POS = 1000
 MIN_ANGLE = -90
 MAX_ANGLE = 90
 
-# Motion settings
+# Motion settings (defaults, can be changed by service)
 SCS_MOVING_ACC = 240
 SCS_MOVING_SPEED = 1000
 
@@ -57,6 +58,11 @@ class HandNode(Node):
         self.last_servo_update = time.time()
         self.servo_update_threshold = 0.1
         self.external_control_active = False
+
+        # Dynamic motion parameters
+        self.moving_speed = SCS_MOVING_SPEED
+        self.moving_acc = SCS_MOVING_ACC
+        self.default_step_deg = 15.0
 
         # Centralized IDs and joint names for both hands
         if self.hand == 'left':
@@ -107,9 +113,10 @@ class HandNode(Node):
         self.joint_state_sub = self.create_subscription(JointState, 'joint_states', self.joint_state_callback, 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
 
-        # Service servers for MoveHand and RunGesture
+        # Service servers for MoveHand, RunGesture, and SetMotionParams
         self.srv = self.create_service(MoveHand, 'move_hand', self.handle_move_hand_service)
         self.gesture_srv = self.create_service(RunGesture, 'run_gesture', self.handle_run_gesture_service)
+        self.set_motion_params_srv = self.create_service(SetMotionParams, 'set_motion_params', self.handle_set_motion_params)
 
         # Action server for ExecuteGesture
         self.gesture_action_server = ActionServer(
@@ -128,14 +135,31 @@ class HandNode(Node):
 
         for sid in self.SCS_IDs:
             self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_TORQUE_ENABLE, 1)
-            self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_GOAL_ACC, SCS_MOVING_ACC)
-            self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, SCS_MOVING_SPEED)
+            self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_GOAL_ACC, self.moving_acc)
+            self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, self.moving_speed)
 
         self.get_logger().info(f"{self.hand.capitalize()} hand node initialized. Ready to receive commands.")
         if self.hand == 'both':
             self.move_both_hands_to_angles([0,0,0,0,0,0], step_delay=self.default_step_delay)
         else:
             self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)
+
+    def handle_set_motion_params(self, request, response):
+        try:
+            self.moving_speed = request.speed
+            self.moving_acc = request.acceleration
+            self.default_step_deg = request.step_degree
+            for sid in self.SCS_IDs:
+                self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_GOAL_ACC, self.moving_acc)
+                self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, self.moving_speed)
+            response.success = True
+            response.message = f"Set speed={self.moving_speed}, acceleration={self.moving_acc}, step_degree={self.default_step_deg}"
+            self.get_logger().info(response.message)
+        except Exception as e:
+            response.success = False
+            response.message = str(e)
+            self.get_logger().error(response.message)
+        return response
 
     def handle_move_hand_service(self, request, response):
         try:
@@ -265,7 +289,9 @@ class HandNode(Node):
             else:
                 self.get_logger().warn(f"No gesture file found for action '{action}' at {sheet_file}")
 
-    def move_to_angles(self, target_angles, step_deg=15, step_delay=0.01):
+    def move_to_angles(self, target_angles, step_deg=None, step_delay=0.01):
+        if step_deg is None:
+            step_deg = self.default_step_deg
         if self.hand == 'left':
             target_angles = [-angle for angle in target_angles]
 
@@ -287,7 +313,9 @@ class HandNode(Node):
             self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_POSITION, pos)
         self.update_and_publish_joint_states(target_angles)
 
-    def move_both_hands_to_angles(self, angles, step_deg=15, step_delay=0.001):
+    def move_both_hands_to_angles(self, angles, step_deg=None, step_delay=0.001):
+        if step_deg is None:
+            step_deg = self.default_step_deg
         # angles: [right1, right2, right3, left1, left2, left3]
         current_angles = self.read_current_angles_both()
         steps = int(max(abs(t - c) for t, c in zip(angles, current_angles)) // step_deg) + 1

@@ -6,3 +6,7 @@ from ainex_interfaces.srv._run_gesture import RunGesture  # noqa: F401
 from ainex_interfaces.srv._run_gesture import RunGesture_Event  # noqa: F401
 from ainex_interfaces.srv._run_gesture import RunGesture_Request  # noqa: F401
 from ainex_interfaces.srv._run_gesture import RunGesture_Response  # noqa: F401
+from ainex_interfaces.srv._set_motion_params import SetMotionParams  # noqa: F401
+from ainex_interfaces.srv._set_motion_params import SetMotionParams_Event  # noqa: F401
+from ainex_interfaces.srv._set_motion_params import SetMotionParams_Request  # noqa: F401
+from ainex_interfaces.srv._set_motion_params import SetMotionParams_Response  # noqa: F401

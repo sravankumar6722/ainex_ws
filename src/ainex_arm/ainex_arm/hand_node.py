@@ -11,14 +11,13 @@ import numpy as np
 from ainex_arm.scservo_sdk import *
 
 # Import your custom services and actions
-from ainex_interfaces.srv import RunGesture, MoveHand
+from ainex_interfaces.srv import RunGesture, MoveHand, SetMotionParams
 from ainex_interfaces.action import ExecuteGesture
-from ainex_interfaces.srv import SetMotionParams  # <-- Add this import after creating the srv
 from rclpy.action import ActionServer
 
 # Servo Configuration
 BAUDRATE = 1000000
-DEVICENAME = '/dev/ttyACM0'
+DEVICENAME = '/dev/ttyACM0' # Replace the port accordingly
 PROTOCOL_END = 1
 
 # Control table addresses

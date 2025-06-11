@@ -139,10 +139,11 @@ class HandNode(Node):
 
     def handle_move_hand_service(self, request, response):
         try:
-            if self.hand == 'both' and len(request.angles) == 6:
-                self.move_both_hands_to_angles(request.angles)
-            elif len(request.angles) == 3:
-                self.move_to_angles(request.angles)
+            angles = list(request.angles)
+            if self.hand == 'both' and len(angles) == 6:
+                self.move_both_hands_to_angles(angles)
+            elif len(angles) == 3:
+                self.move_to_angles(angles)
             else:
                 response.success = False
                 response.message = "Invalid number of angles"

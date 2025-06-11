@@ -44,6 +44,7 @@ struct SetMotionParams_Request_
       this->speed = 0l;
       this->acceleration = 0l;
       this->step_degree = 0.0f;
+      this->torque = false;
     }
   }
 
@@ -56,6 +57,7 @@ struct SetMotionParams_Request_
       this->speed = 0l;
       this->acceleration = 0l;
       this->step_degree = 0.0f;
+      this->torque = false;
     }
   }
 
@@ -69,6 +71,9 @@ struct SetMotionParams_Request_
   using _step_degree_type =
     float;
   _step_degree_type step_degree;
+  using _torque_type =
+    bool;
+  _torque_type torque;
 
   // setters for named parameter idiom
   Type & set__speed(
@@ -87,6 +92,12 @@ struct SetMotionParams_Request_
     const float & _arg)
   {
     this->step_degree = _arg;
+    return *this;
+  }
+  Type & set__torque(
+    const bool & _arg)
+  {
+    this->torque = _arg;
     return *this;
   }
 
@@ -139,6 +150,9 @@ struct SetMotionParams_Request_
       return false;
     }
     if (this->step_degree != other.step_degree) {
+      return false;
+    }
+    if (this->torque != other.torque) {
       return false;
     }
     return true;

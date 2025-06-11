@@ -59,6 +59,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/GetServoStatus.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/action" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json")
 endif()
 
@@ -387,6 +391,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/srv/GetServoStatus.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/action" TYPE FILE FILES "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl")
 endif()
 
@@ -400,6 +408,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/src/ainex_interfaces/srv/SetMotionParams.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ainex_interfaces/srv" TYPE FILE FILES "/home/vgi/ainex_ws/src/ainex_interfaces/srv/GetServoStatus.srv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

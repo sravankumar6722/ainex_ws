@@ -10,9 +10,9 @@ This project implements real-time control and visualization of two 3-DOF robotic
 - A separate `ainex_interfaces` package for all custom ROS 2 interfaces (services and actions).
 - Ready for future expansion (head, legs, etc.).
 
----
-
-## Workspace and Package Setup
+                                                                                    -------------------------------
+------------------------------------------------------------------------------------| Workspace and Package Setup |--------------------------------------------------------------------------------------------------
+                                                                                    -------------------------------
 
 ### 1. Create the ROS 2 Workspace
 
@@ -40,10 +40,9 @@ cd ~/ainex_ws
 colcon build
 source install/setup.bash
 ```
-
----
-
-## Project Structure
+                                                                                   --------------------
+----------------------------------------------------------------------------------| Project Structure |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                   --------------------
 
 - `ainex_ws/src/ainex_arm/ainex_arm/hand_node.py`  
   Main ROS 2 node for controlling the hands, supporting topic, service, and action-based gesture execution.
@@ -56,9 +55,9 @@ source install/setup.bash
 - `ainex_ws/src/ainex_interfaces/action/`  
   Custom action definitions for long-running gesture execution.
 
----
-
-## How to Run
+                                                                                    --------------
+------------------------------------------------------------------------------------| How to Run |---------------------------------------------------------------------------------------------
+                                                                                    --------------
 
 ### 1. Launch the Hand Node
 
@@ -109,9 +108,9 @@ ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{spee
 ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{gesture_name: 'wave'}"
 ```
 
----
-
-## Topics, Services, and Actions
+                                                                       ---------------------------------
+-----------------------------------------------------------------------| Topics, Services, and Actions |--------------------------------------------------------------------------------------------------
+                                                                       ---------------------------------
 
 | Name                        | Type                                   | Description                                  |
 |-----------------------------|----------------------------------------|----------------------------------------------|
@@ -129,9 +128,9 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 | `/run_gesture`              | `ainex_interfaces/srv/RunGesture`      | Service to execute a gesture by name         |
 | `/execute_gesture`          | `ainex_interfaces/action/ExecuteGesture`| Action to execute a gesture with feedback    |
 
----
-
-## Notes
+                                                                               ---------
+-------------------------------------------------------------------------------| Notes |---------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                               ---------
 
 - **Excel Sheets:** Place gesture Excel files in `ainex_ws/src/ainex_arm/ainex_sheets/`. Each file should have columns: `Servo1`, `Servo2`, `Servo3`, and optionally `Delay`. For both hands, use `Servo1` to `Servo6`.
 - **URDF:** The URDF supports both left and right hands. Make sure joint names in your code and URDF match.
@@ -139,9 +138,9 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 - **Actions:** Use `/execute_gesture` for long-running gestures with feedback and cancel support.
 - **Future Expansion:** The project is structured for easy addition of head, legs, or other modules.
 
----
-
-## Example Workflow
+                                                                          --------------------
+--------------------------------------------------------------------------| Example Workflow |--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                          --------------------
 
 1. Build the workspace:  
    `colcon build`
@@ -151,9 +150,9 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 4. Send gesture commands via topic, service, or action as shown above.
 5. Visualize in RViz.
 
----
-
-## Commands
+                                                                               -----------
+------------------------------------------------------------------------------ |Commands |-------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                               -----------
 
 ### Run the Node
 
@@ -204,15 +203,15 @@ ros2 service call /set_motion_params ainex_interfaces/srv/SetMotionParams "{spee
 ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{gesture_name: 'wave'}"
 ```
 
----
-
-## Troubleshooting
+                                                                             -------------------
+-----------------------------------------------------------------------------| Troubleshooting |---------------------------------------------------------------------------------------------------------------------------------------
+                                                                             -------------------
 
 - If RViz shows flickering or snapping, ensure both arms' joint states are always published together.
 - If gestures do not execute, check the Excel file path and format.
 - If services or actions are not found, ensure you have sourced the workspace and that the interface package is built.
 - For action errors about `rclpy.sleep`, use `await asyncio.sleep(...)` in your code.
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Enjoy controlling your Ainex robot's hands!**

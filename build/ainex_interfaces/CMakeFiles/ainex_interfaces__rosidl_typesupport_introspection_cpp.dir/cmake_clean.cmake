@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.cpp.o.d"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp.o"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__type_support.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "libainex_interfaces__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_introspection_cpp.hpp"

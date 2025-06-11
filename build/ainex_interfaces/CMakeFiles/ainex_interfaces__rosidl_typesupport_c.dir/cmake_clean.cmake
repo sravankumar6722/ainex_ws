@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/action/execute_gesture__type_support.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/action/execute_gesture__type_support.cpp.o.d"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/get_servo_status__type_support.cpp.o"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/get_servo_status__type_support.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/move_hand__type_support.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/move_hand__type_support.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/run_gesture__type_support.cpp.o"
@@ -10,6 +12,7 @@ file(REMOVE_RECURSE
   "libainex_interfaces__rosidl_typesupport_c.pdb"
   "libainex_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/ainex_interfaces/action/execute_gesture__type_support.cpp"
+  "rosidl_typesupport_c/ainex_interfaces/srv/get_servo_status__type_support.cpp"
   "rosidl_typesupport_c/ainex_interfaces/srv/move_hand__type_support.cpp"
   "rosidl_typesupport_c/ainex_interfaces/srv/run_gesture__type_support.cpp"
   "rosidl_typesupport_c/ainex_interfaces/srv/set_motion_params__type_support.cpp"

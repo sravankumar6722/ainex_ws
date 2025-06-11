@@ -67,6 +67,7 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
         '_speed',
         '_acceleration',
         '_step_degree',
+        '_torque',
         '_check_fields',
     ]
 
@@ -74,6 +75,7 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
         'speed': 'int32',
         'acceleration': 'int32',
         'step_degree': 'float',
+        'torque': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -82,6 +84,7 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -96,6 +99,7 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
         self.speed = kwargs.get('speed', int())
         self.acceleration = kwargs.get('acceleration', int())
         self.step_degree = kwargs.get('step_degree', float())
+        self.torque = kwargs.get('torque', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -132,6 +136,8 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
         if self.acceleration != other.acceleration:
             return False
         if self.step_degree != other.step_degree:
+            return False
+        if self.torque != other.torque:
             return False
         return True
 
@@ -184,6 +190,19 @@ class SetMotionParams_Request(metaclass=Metaclass_SetMotionParams_Request):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'step_degree' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._step_degree = value
+
+    @builtins.property
+    def torque(self):
+        """Message field 'torque'."""
+        return self._torque
+
+    @torque.setter
+    def torque(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'torque' field must be of type 'bool'"
+        self._torque = value
 
 
 # Import statements for member types

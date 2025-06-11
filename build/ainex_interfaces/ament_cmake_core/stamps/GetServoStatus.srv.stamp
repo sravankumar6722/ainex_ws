@@ -1,0 +1,5 @@
+---
+float32[] angles
+int32[] raw_positions
+bool success
+string message

@@ -31,7 +31,7 @@ void ainex_interfaces__srv__SetMotionParams_Request__rosidl_typesupport_introspe
   ainex_interfaces__srv__SetMotionParams_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember ainex_interfaces__srv__SetMotionParams_Request__rosidl_typesupport_introspection_c__SetMotionParams_Request_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember ainex_interfaces__srv__SetMotionParams_Request__rosidl_typesupport_introspection_c__SetMotionParams_Request_message_member_array[4] = {
   {
     "speed",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -85,13 +85,31 @@ static rosidl_typesupport_introspection_c__MessageMember ainex_interfaces__srv__
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "torque",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ainex_interfaces__srv__SetMotionParams_Request, torque),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers ainex_interfaces__srv__SetMotionParams_Request__rosidl_typesupport_introspection_c__SetMotionParams_Request_message_members = {
   "ainex_interfaces__srv",  // message namespace
   "SetMotionParams_Request",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(ainex_interfaces__srv__SetMotionParams_Request),
   false,  // has_any_key_member_
   ainex_interfaces__srv__SetMotionParams_Request__rosidl_typesupport_introspection_c__SetMotionParams_Request_message_member_array,  // message members

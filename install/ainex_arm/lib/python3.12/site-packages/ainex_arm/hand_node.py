@@ -11,14 +11,13 @@ import numpy as np
 from ainex_arm.scservo_sdk import *
 
 # Import your custom services and actions
-from ainex_interfaces.srv import RunGesture, MoveHand
+from ainex_interfaces.srv import RunGesture, MoveHand, SetMotionParams, GetServoStatus
 from ainex_interfaces.action import ExecuteGesture
-from ainex_interfaces.srv import SetMotionParams  # <-- Add this import after creating the srv
 from rclpy.action import ActionServer
 
 # Servo Configuration
 BAUDRATE = 1000000
-DEVICENAME = '/dev/ttyACM0'
+DEVICENAME = '/dev/ttyACM0' # Replace the port accordingly
 PROTOCOL_END = 1
 
 # Control table addresses
@@ -117,6 +116,7 @@ class HandNode(Node):
         self.srv = self.create_service(MoveHand, 'move_hand', self.handle_move_hand_service)
         self.gesture_srv = self.create_service(RunGesture, 'run_gesture', self.handle_run_gesture_service)
         self.set_motion_params_srv = self.create_service(SetMotionParams, 'set_motion_params', self.handle_set_motion_params)
+        self.get_servo_status_srv = self.create_service(GetServoStatus, 'get_servo_status', self.handle_get_servo_status)
 
         # Action server for ExecuteGesture
         self.gesture_action_server = ActionServer(
@@ -144,12 +144,33 @@ class HandNode(Node):
         else:
             self.move_to_angles([0, 0, 0], step_delay=self.default_step_delay)
 
+    def handle_get_servo_status(self, request, response):
+        try:
+            angles = []
+            raw_positions = []
+            for sid in self.SCS_IDs:
+                raw_pos, _, _ = self.packetHandler.read2ByteTxRx(self.portHandler, sid, ADDR_PRESENT_POSITION)
+                angle = MIN_ANGLE + (raw_pos - MIN_RAW_POS) * (MAX_ANGLE - MIN_ANGLE) / (MAX_RAW_POS - MIN_RAW_POS)
+                angles.append(float(angle))
+                raw_positions.append(int(raw_pos))
+            response.angles = angles
+            response.raw_positions = raw_positions
+            response.success = True
+            response.message = "Servo status retrieved successfully"
+            self.get_logger().info(f"Servo status: Angles={angles}, Raw Positions={raw_positions}")
+        except Exception as e:
+            response.success = False
+            response.message = str(e)
+            self.get_logger().error(f"Error retrieving servo status: {response.message}")
+        return response
+
     def handle_set_motion_params(self, request, response):
         try:
             self.moving_speed = request.speed
             self.moving_acc = request.acceleration
             self.default_step_deg = request.step_degree
             for sid in self.SCS_IDs:
+                self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_TORQUE_ENABLE, int(request.torque))
                 self.packetHandler.write1ByteTxRx(self.portHandler, sid, ADDR_GOAL_ACC, self.moving_acc)
                 self.packetHandler.write2ByteTxRx(self.portHandler, sid, ADDR_GOAL_SPEED, self.moving_speed)
             response.success = True

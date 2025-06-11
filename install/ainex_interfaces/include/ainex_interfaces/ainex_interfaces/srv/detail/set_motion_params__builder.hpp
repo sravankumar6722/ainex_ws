@@ -24,16 +24,32 @@ namespace srv
 namespace builder
 {
 
+class Init_SetMotionParams_Request_torque
+{
+public:
+  explicit Init_SetMotionParams_Request_torque(::ainex_interfaces::srv::SetMotionParams_Request & msg)
+  : msg_(msg)
+  {}
+  ::ainex_interfaces::srv::SetMotionParams_Request torque(::ainex_interfaces::srv::SetMotionParams_Request::_torque_type arg)
+  {
+    msg_.torque = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::ainex_interfaces::srv::SetMotionParams_Request msg_;
+};
+
 class Init_SetMotionParams_Request_step_degree
 {
 public:
   explicit Init_SetMotionParams_Request_step_degree(::ainex_interfaces::srv::SetMotionParams_Request & msg)
   : msg_(msg)
   {}
-  ::ainex_interfaces::srv::SetMotionParams_Request step_degree(::ainex_interfaces::srv::SetMotionParams_Request::_step_degree_type arg)
+  Init_SetMotionParams_Request_torque step_degree(::ainex_interfaces::srv::SetMotionParams_Request::_step_degree_type arg)
   {
     msg_.step_degree = std::move(arg);
-    return std::move(msg_);
+    return Init_SetMotionParams_Request_torque(msg_);
   }
 
 private:

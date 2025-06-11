@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ainex_interfaces/srv/GetServoStatus.srv
+// generated code does not contain a copyright notice
+
+
+module ainex_interfaces {
+  module srv {
+    struct GetServoStatus_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetServoStatus_Response {
+      sequence<float> angles;
+
+      sequence<int32> raw_positions;
+
+      boolean success;
+
+      string message;
+    };
+  };
+};

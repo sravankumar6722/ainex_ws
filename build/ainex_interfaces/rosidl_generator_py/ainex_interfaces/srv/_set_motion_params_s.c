@@ -77,6 +77,15 @@ bool ainex_interfaces__srv__set_motion_params__request__convert_from_py(PyObject
     ros_message->step_degree = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // torque
+    PyObject * field = PyObject_GetAttrString(_pymsg, "torque");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->torque = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -126,6 +135,17 @@ PyObject * ainex_interfaces__srv__set_motion_params__request__convert_to_py(void
     field = PyFloat_FromDouble(ros_message->step_degree);
     {
       int rc = PyObject_SetAttrString(_pymessage, "step_degree", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // torque
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->torque ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "torque", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

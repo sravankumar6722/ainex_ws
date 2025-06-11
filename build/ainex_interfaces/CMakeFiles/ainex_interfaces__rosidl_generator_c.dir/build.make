@@ -91,6 +91,7 @@ rosidl_generator_c/ainex_interfaces/srv/move_hand.h: /opt/ros/jazzy/share/rosidl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl
+rosidl_generator_c/ainex_interfaces/srv/move_hand.h: rosidl_adapter/ainex_interfaces/srv/GetServoStatus.idl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_c/ainex_interfaces/srv/move_hand.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -136,6 +137,18 @@ rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__struct.h: rosi
 rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.h
 
+rosidl_generator_c/ainex_interfaces/srv/get_servo_status.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/get_servo_status.h
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h
+
 rosidl_generator_c/ainex_interfaces/action/execute_gesture.h: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/action/execute_gesture.h
 
@@ -174,6 +187,15 @@ rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.c: r
 
 rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c
 
 rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c
@@ -310,10 +332,52 @@ CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_int
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.s
 
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c > CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.i
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.s
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c > CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.i
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.s
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c > CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.i
+
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.s
+
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o: rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c
 
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.i: cmake_force
@@ -327,7 +391,7 @@ CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_int
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o: rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c
 
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.i: cmake_force
@@ -341,7 +405,7 @@ CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_int
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o -MF CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o.d -o CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o -c /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
 
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.i: cmake_force
@@ -363,6 +427,9 @@ ainex_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__description.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o" \
+"CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o" \
+"CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o" \
+"CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o" \
 "CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o"
@@ -379,6 +446,9 @@ libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__description.c.o
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.c.o
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o
+libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o
+libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o
+libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o
@@ -390,7 +460,7 @@ libainex_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/libbuiltin_interf
 libainex_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libainex_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/librcutils.so
 libainex_interfaces__rosidl_generator_c.so: CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libainex_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libainex_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -408,6 +478,12 @@ CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/a
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/action/execute_gesture.h
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__description.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.h
@@ -426,6 +502,7 @@ CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/a
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__struct.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.h
+CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/get_servo_status.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/move_hand.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/run_gesture.h
 CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/ainex_interfaces/srv/set_motion_params.h

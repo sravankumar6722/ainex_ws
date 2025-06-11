@@ -240,6 +240,9 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/aine
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__struct.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h \
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h \
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h \
  /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \

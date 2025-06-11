@@ -6,6 +6,9 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_gen
   rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h \
   rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h \
   rosidl_generator_c/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h \
+  rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h \
+  rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h \
   rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.h \
   rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__struct.h \
   rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.h \
@@ -301,8 +304,6 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_gen
 
 /usr/include/time.h:
 
-/usr/include/string.h:
-
 /usr/include/stdlib.h:
 
 /usr/include/stdio.h:
@@ -318,6 +319,10 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_gen
 /usr/include/python3.12/traceback.h:
 
 /usr/include/python3.12/sysmodule.h:
+
+/usr/include/python3.12/sliceobject.h:
+
+/usr/include/python3.12/setobject.h:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
 
@@ -336,8 +341,6 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_gen
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/python3.12/cpython/compile.h:
-
-/usr/include/python3.12/cpython/sysmodule.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
 
@@ -427,21 +430,25 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/python3.12/rangeobject.h:
+
+/usr/include/python3.12/bytearrayobject.h:
+
 /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs.h:
 
 /usr/include/aarch64-linux-gnu/bits/math-vector.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
-
 /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
+/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/aarch64-linux-gnu/bits/endianness.h:
+
+/usr/include/ctype.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -451,17 +458,15 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-logb.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
+rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+/usr/include/string.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h:
 
-/usr/include/python3.12/sliceobject.h:
+/usr/include/python3.12/warnings.h:
 
-/usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
@@ -471,19 +476,19 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h:
 
 /usr/include/python3.12/pyerrors.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
-/usr/include/python3.12/warnings.h:
-
-/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
+/opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
 
 /usr/include/python3.12/fileobject.h:
 
 /usr/include/inttypes.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/setjmp.h:
 
@@ -493,13 +498,15 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h:
 
 /usr/include/python3.12/import.h:
 
-/usr/include/python3.12/setobject.h:
-
 /usr/include/python3.12/pyconfig.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/python3.12/cpython/sysmodule.h:
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h:
 
 rosidl_generator_c/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
@@ -513,13 +520,23 @@ rosidl_generator_c/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.h:
 
+rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__struct.h:
+
 rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__functions.h:
 
 /usr/include/pthread.h:
 
-rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__struct.h:
+/usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
 
-rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.h:
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
 
@@ -532,12 +549,6 @@ rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.h:
 /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/aarch64-linux-gnu/bits/environments.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/endianness.h:
-
-/usr/include/ctype.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
 
@@ -561,16 +572,6 @@ rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/aarch64-linux-gnu/bits/xopen_lim.h:
-
-rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/python3.12/pymem.h:
-
-/usr/include/python3.12/pystate.h:
-
 /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
 
 /usr/include/python3.12/cpython/unicodeobject.h:
@@ -589,8 +590,6 @@ rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.h:
 
 rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.h:
 
-/usr/include/python3.12/cpython/bytesobject.h:
-
 rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h:
 
 /usr/include/aarch64-linux-gnu/bits/endian.h:
@@ -598,6 +597,12 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/usr/include/python3.12/cpython/bytesobject.h:
+
+rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h:
+
+/usr/include/python3.12/cpython/context.h:
 
 /usr/include/python3.12/cpython/complexobject.h:
 
@@ -614,6 +619,16 @@ rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.
 /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/aarch64-linux-gnu/bits/confname.h:
+
+rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.h:
+
+/usr/include/aarch64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/python3.12/pymem.h:
+
+/usr/include/python3.12/pystate.h:
 
 rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.h:
 
@@ -711,8 +726,6 @@ rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__struct.h:
 
 /usr/include/python3.12/cpython/code.h:
 
-/usr/include/python3.12/cpython/context.h:
-
 /usr/include/python3.12/cpython/descrobject.h:
 
 /usr/include/python3.12/Python.h:
@@ -756,10 +769,6 @@ rosidl_generator_c/ainex_interfaces/srv/detail/run_gesture__struct.h:
 /usr/include/python3.12/cpython/memoryobject.h:
 
 /usr/include/python3.12/cpython/object.h:
-
-/usr/include/python3.12/bytearrayobject.h:
-
-/usr/include/python3.12/rangeobject.h:
 
 /usr/include/python3.12/cpython/objimpl.h:
 

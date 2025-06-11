@@ -11,6 +11,8 @@ module ainex_interfaces {
       int32 acceleration;
 
       float step_degree;
+
+      boolean torque;
     };
     struct SetMotionParams_Response {
       boolean success;

@@ -7,6 +7,9 @@ CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_gen
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__struct.h
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.h
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.h
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__struct.h
+ /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.h
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.h
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__struct.h
  /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.h

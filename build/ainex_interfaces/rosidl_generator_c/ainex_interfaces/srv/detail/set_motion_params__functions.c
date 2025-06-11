@@ -19,6 +19,7 @@ ainex_interfaces__srv__SetMotionParams_Request__init(ainex_interfaces__srv__SetM
   // speed
   // acceleration
   // step_degree
+  // torque
   return true;
 }
 
@@ -31,6 +32,7 @@ ainex_interfaces__srv__SetMotionParams_Request__fini(ainex_interfaces__srv__SetM
   // speed
   // acceleration
   // step_degree
+  // torque
 }
 
 bool
@@ -51,6 +53,10 @@ ainex_interfaces__srv__SetMotionParams_Request__are_equal(const ainex_interfaces
   if (lhs->step_degree != rhs->step_degree) {
     return false;
   }
+  // torque
+  if (lhs->torque != rhs->torque) {
+    return false;
+  }
   return true;
 }
 
@@ -68,6 +74,8 @@ ainex_interfaces__srv__SetMotionParams_Request__copy(
   output->acceleration = input->acceleration;
   // step_degree
   output->step_degree = input->step_degree;
+  // torque
+  output->torque = input->torque;
   return true;
 }
 

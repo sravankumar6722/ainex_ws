@@ -38,7 +38,7 @@ void SetMotionParams_Request_fini_function(void * message_memory)
   typed_message->~SetMotionParams_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember SetMotionParams_Request_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember SetMotionParams_Request_message_member_array[4] = {
   {
     "speed",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -92,13 +92,31 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SetMotionPara
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "torque",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ainex_interfaces::srv::SetMotionParams_Request, torque),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers SetMotionParams_Request_message_members = {
   "ainex_interfaces::srv",  // message namespace
   "SetMotionParams_Request",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(ainex_interfaces::srv::SetMotionParams_Request),
   false,  // has_any_key_member_
   SetMotionParams_Request_message_member_array,  // message members

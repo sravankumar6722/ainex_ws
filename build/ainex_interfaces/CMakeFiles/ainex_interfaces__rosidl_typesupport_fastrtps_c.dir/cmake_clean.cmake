@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__type_support_c.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__type_support_c.cpp.o.d"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__type_support_c.cpp.o"
+  "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__type_support_c.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__type_support_c.cpp.o"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__type_support_c.cpp.o.d"
   "CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/run_gesture__type_support_c.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "libainex_interfaces__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/run_gesture__rosidl_typesupport_fastrtps_c.h"

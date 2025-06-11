@@ -68,6 +68,16 @@
               "nested_type_name": ""
             },
             "default_value": ""
+          },
+          {
+            "name": "torque",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
           }
         ]
       },
@@ -171,11 +181,11 @@
   "type_hashes": [
     {
       "type_name": "ainex_interfaces/srv/SetMotionParams_Event",
-      "hash_string": "RIHS01_537d9ef6cb743e19489cd989da244eec4b1cbdc395a60a4cef988a6d2b4f075d"
+      "hash_string": "RIHS01_32894f6a6c5a660ee76e119ae1ae81a69c7cdf6395bfcf82679396ba453a0a9a"
     },
     {
       "type_name": "ainex_interfaces/srv/SetMotionParams_Request",
-      "hash_string": "RIHS01_24d428828aefa91a1079e3485a5971625c5452d55c1393fe3f854ee97ed9c3e7"
+      "hash_string": "RIHS01_b1cc354beaf7dc400797ff424f914fadf7a202a695f16f82cda72f204119a63d"
     },
     {
       "type_name": "ainex_interfaces/srv/SetMotionParams_Response",

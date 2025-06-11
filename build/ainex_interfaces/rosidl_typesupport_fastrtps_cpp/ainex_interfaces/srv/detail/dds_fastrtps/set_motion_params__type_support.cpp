@@ -45,6 +45,9 @@ cdr_serialize(
   // Member: step_degree
   cdr << ros_message.step_degree;
 
+  // Member: torque
+  cdr << (ros_message.torque ? true : false);
+
   return true;
 }
 
@@ -62,6 +65,13 @@ cdr_deserialize(
 
   // Member: step_degree
   cdr >> ros_message.step_degree;
+
+  // Member: torque
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.torque = tmp ? true : false;
+  }
 
   return true;
 }
@@ -97,6 +107,13 @@ get_serialized_size(
   // Member: step_degree
   {
     size_t item_size = sizeof(ros_message.step_degree);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: torque
+  {
+    size_t item_size = sizeof(ros_message.torque);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -145,6 +162,12 @@ max_serialized_size_SetMotionParams_Request(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // Member: torque
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -154,7 +177,7 @@ max_serialized_size_SetMotionParams_Request(
     using DataType = ainex_interfaces::srv::SetMotionParams_Request;
     is_plain =
       (
-      offsetof(DataType, step_degree) +
+      offsetof(DataType, torque) +
       last_member_size
       ) == ret_val;
   }
@@ -176,6 +199,9 @@ cdr_serialize_key(
 
   // Member: step_degree
   cdr << ros_message.step_degree;
+
+  // Member: torque
+  cdr << (ros_message.torque ? true : false);
 
   return true;
 }
@@ -210,6 +236,13 @@ get_serialized_size_key(
   // Member: step_degree
   {
     size_t item_size = sizeof(ros_message.step_degree);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: torque
+  {
+    size_t item_size = sizeof(ros_message.torque);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -260,6 +293,13 @@ max_serialized_size_key_SetMotionParams_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: torque
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -268,7 +308,7 @@ max_serialized_size_key_SetMotionParams_Request(
     using DataType = ainex_interfaces::srv::SetMotionParams_Request;
     is_plain =
       (
-      offsetof(DataType, step_degree) +
+      offsetof(DataType, torque) +
       last_member_size
       ) == ret_val;
   }

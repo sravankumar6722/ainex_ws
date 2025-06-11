@@ -72,12 +72,14 @@ include /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFile
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_set_motion_params.py
+/home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_get_servo_status.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/__init__.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/__init__.py
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c
+/home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c
 /home/vgi/ainex_ws/build/ainex_interfaces/ainex_interfaces__py/CMakeFiles/ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
 
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
@@ -96,6 +98,7 @@ rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl
+rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/srv/GetServoStatus.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -123,6 +126,9 @@ rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py: rosidl_generator_py/ai
 rosidl_generator_py/ainex_interfaces/srv/_set_motion_params.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_set_motion_params.py
 
+rosidl_generator_py/ainex_interfaces/srv/_get_servo_status.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_get_servo_status.py
+
 rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
 
@@ -141,6 +147,9 @@ rosidl_generator_py/ainex_interfaces/srv/_run_gesture_s.c: rosidl_generator_py/a
 rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c
 
+rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c
+
 rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c: rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
 
@@ -152,6 +161,8 @@ ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/__init__.py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/__init__.py
+ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_get_servo_status.py
+ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand.py
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c
 ainex_interfaces__py: rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py

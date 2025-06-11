@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/action/_execute_gesture.py"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/__init__.py"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_get_servo_status.py"
+  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_move_hand.py"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_py/ainex_interfaces/srv/_run_gesture.py"

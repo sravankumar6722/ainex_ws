@@ -1,5 +1,7 @@
 action/ExecuteGesture.action
 action/ExecuteGesture.idl
+srv/GetServoStatus.idl
+srv/GetServoStatus.srv
 srv/MoveHand.idl
 srv/MoveHand.srv
 srv/RunGesture.idl

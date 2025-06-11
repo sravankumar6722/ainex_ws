@@ -26,6 +26,7 @@ typedef struct ainex_interfaces__srv__SetMotionParams_Request
   int32_t speed;
   int32_t acceleration;
   float step_degree;
+  bool torque;
 } ainex_interfaces__srv__SetMotionParams_Request;
 
 // Struct for a sequence of ainex_interfaces__srv__SetMotionParams_Request.

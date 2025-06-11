@@ -63,6 +63,11 @@ bool cdr_serialize_ainex_interfaces__srv__SetMotionParams_Request(
     cdr << ros_message->step_degree;
   }
 
+  // Field name: torque
+  {
+    cdr << (ros_message->torque ? true : false);
+  }
+
   return true;
 }
 
@@ -84,6 +89,13 @@ bool cdr_deserialize_ainex_interfaces__srv__SetMotionParams_Request(
   // Field name: step_degree
   {
     cdr >> ros_message->step_degree;
+  }
+
+  // Field name: torque
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->torque = tmp ? true : false;
   }
 
   return true;
@@ -121,6 +133,13 @@ size_t get_serialized_size_ainex_interfaces__srv__SetMotionParams_Request(
   // Field name: step_degree
   {
     size_t item_size = sizeof(ros_message->step_degree);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: torque
+  {
+    size_t item_size = sizeof(ros_message->torque);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -171,6 +190,13 @@ size_t max_serialized_size_ainex_interfaces__srv__SetMotionParams_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: torque
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -180,7 +206,7 @@ size_t max_serialized_size_ainex_interfaces__srv__SetMotionParams_Request(
     using DataType = ainex_interfaces__srv__SetMotionParams_Request;
     is_plain =
       (
-      offsetof(DataType, step_degree) +
+      offsetof(DataType, torque) +
       last_member_size
       ) == ret_val;
   }
@@ -205,6 +231,11 @@ bool cdr_serialize_key_ainex_interfaces__srv__SetMotionParams_Request(
   // Field name: step_degree
   {
     cdr << ros_message->step_degree;
+  }
+
+  // Field name: torque
+  {
+    cdr << (ros_message->torque ? true : false);
   }
 
   return true;
@@ -242,6 +273,13 @@ size_t get_serialized_size_key_ainex_interfaces__srv__SetMotionParams_Request(
   // Field name: step_degree
   {
     size_t item_size = sizeof(ros_message->step_degree);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: torque
+  {
+    size_t item_size = sizeof(ros_message->torque);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -290,6 +328,13 @@ size_t max_serialized_size_key_ainex_interfaces__srv__SetMotionParams_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: torque
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -298,7 +343,7 @@ size_t max_serialized_size_key_ainex_interfaces__srv__SetMotionParams_Request(
     using DataType = ainex_interfaces__srv__SetMotionParams_Request;
     is_plain =
       (
-      offsetof(DataType, step_degree) +
+      offsetof(DataType, torque) +
       last_member_size
       ) == ret_val;
   }

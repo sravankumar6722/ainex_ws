@@ -17,7 +17,12 @@ ainex_arm/scservo_sdk/packet_handler.py
 ainex_arm/scservo_sdk/port_handler.py
 ainex_arm/scservo_sdk/protocol_packet_handler.py
 ainex_arm/scservo_sdk/scservo_def.py
+launch/hand_node.launch.py
 resource/ainex_arm
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+urdf/ainex_arm.urdf
+urdf/basic_arm.urdf
+urdf/robot.urdf
+urdf/robot2.urdf

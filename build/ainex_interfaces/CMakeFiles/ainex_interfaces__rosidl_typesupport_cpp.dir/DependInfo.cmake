@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o" "gcc" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o.d"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp.o" "gcc" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp.o.d"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o" "gcc" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o.d"
-  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.o" "gcc" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp.o.d"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp.o" "gcc" "CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp.o.d"
   )
 
@@ -19,7 +18,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp"
-  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/run_gesture__type_support.cpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp"
   )
 

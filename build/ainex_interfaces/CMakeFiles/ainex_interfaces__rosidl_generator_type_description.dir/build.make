@@ -67,7 +67,6 @@ include CMakeFiles/ainex_interfaces__rosidl_generator_type_description.dir/compi
 include CMakeFiles/ainex_interfaces__rosidl_generator_type_description.dir/progress.make
 
 CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json
-CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json
 CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json
 CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/GetServoStatus.json
 CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json
@@ -75,15 +74,11 @@ CMakeFiles/ainex_interfaces__rosidl_generator_type_description: rosidl_generator
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: rosidl_adapter/ainex_interfaces/srv/MoveHand.idl
-rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: rosidl_adapter/ainex_interfaces/srv/RunGesture.idl
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: rosidl_adapter/ainex_interfaces/srv/SetMotionParams.idl
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: rosidl_adapter/ainex_interfaces/srv/GetServoStatus.idl
 rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json: rosidl_adapter/ainex_interfaces/action/ExecuteGesture.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vgi/ainex_ws/build/ainex_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description__arguments.json
-
-rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json: rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json
 
 rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json: rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json
@@ -98,7 +93,6 @@ ainex_interfaces__rosidl_generator_type_description: CMakeFiles/ainex_interfaces
 ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json
 ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/GetServoStatus.json
 ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json
-ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json
 ainex_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json
 ainex_interfaces__rosidl_generator_type_description: CMakeFiles/ainex_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : ainex_interfaces__rosidl_generator_type_description

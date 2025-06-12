@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "ainex_interfaces/srv/detail/set_motion_params__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "ainex_interfaces/srv/detail/set_motion_params__functions.h"
 #include "ainex_interfaces/srv/detail/set_motion_params__type_support.h"
+#include "ainex_interfaces/srv/detail/set_motion_params__struct.h"
+#include "ainex_interfaces/srv/detail/set_motion_params__functions.h"
 
 #ifdef __cplusplus
 extern "C"

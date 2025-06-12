@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "ainex_interfaces/srv/detail/get_servo_status__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "ainex_interfaces/srv/detail/get_servo_status__type_support.h"
 #include "ainex_interfaces/srv/detail/get_servo_status__struct.h"
 #include "ainex_interfaces/srv/detail/get_servo_status__functions.h"
 

@@ -67,7 +67,6 @@ include CMakeFiles/ainex_interfaces.dir/compiler_depend.make
 include CMakeFiles/ainex_interfaces.dir/progress.make
 
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/MoveHand.srv
-CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/RunGesture.srv
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/SetMotionParams.srv
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/srv/GetServoStatus.srv
 CMakeFiles/ainex_interfaces: /home/vgi/ainex_ws/src/ainex_interfaces/action/ExecuteGesture.action

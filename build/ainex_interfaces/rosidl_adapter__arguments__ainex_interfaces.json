@@ -2,7 +2,6 @@
   "package_name": "ainex_interfaces",
   "non_idl_tuples": [
     "/home/vgi/ainex_ws/src/ainex_interfaces:srv/MoveHand.srv",
-    "/home/vgi/ainex_ws/src/ainex_interfaces:srv/RunGesture.srv",
     "/home/vgi/ainex_ws/src/ainex_interfaces:srv/SetMotionParams.srv",
     "/home/vgi/ainex_ws/src/ainex_interfaces:srv/GetServoStatus.srv",
     "/home/vgi/ainex_ws/src/ainex_interfaces:action/ExecuteGesture.action"

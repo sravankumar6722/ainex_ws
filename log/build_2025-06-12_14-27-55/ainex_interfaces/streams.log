@@ -1,0 +1,353 @@
+[1.092s] Invoking command in '/home/vgi/ainex_ws/build/ainex_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vgi/ainex_ws/src/ainex_interfaces -DCMAKE_INSTALL_PREFIX=/home/vgi/ainex_ws/install/ainex_interfaces
+[1.496s] -- The C compiler identification is GNU 13.3.0
+[1.798s] -- The CXX compiler identification is GNU 13.3.0
+[1.887s] -- Detecting C compiler ABI info
+[2.392s] -- Detecting C compiler ABI info - done
+[2.484s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.485s] -- Detecting C compile features
+[2.488s] -- Detecting C compile features - done
+[2.532s] -- Detecting CXX compiler ABI info
+[3.268s] -- Detecting CXX compiler ABI info - done
+[3.370s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.372s] -- Detecting CXX compile features
+[3.374s] -- Detecting CXX compile features - done
+[3.390s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.123s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.641s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.691s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.931s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.119s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[8.775s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[10.704s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.467s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.476s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[13.932s] -- Found PythonExtra: /usr/bin/python3  
+[15.402s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[15.529s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[15.595s] -- Added test 'lint_cmake' to check CMake code style
+[15.600s] -- Added test 'xmllint' to check XML markup files
+[15.612s] -- Configuring done (14.5s)
+[15.770s] -- Generating done (0.1s)
+[15.817s] -- Build files have been written to: /home/vgi/ainex_ws/build/ainex_interfaces
+[15.851s] Invoked command in '/home/vgi/ainex_ws/build/ainex_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vgi/ainex_ws/src/ainex_interfaces -DCMAKE_INSTALL_PREFIX=/home/vgi/ainex_ws/install/ainex_interfaces
+[15.856s] Invoking command in '/home/vgi/ainex_ws/build/ainex_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vgi/ainex_ws/build/ainex_interfaces -- -j4 -l4
+[16.080s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[16.111s] [  1%] Built target ament_cmake_python_copy_ainex_interfaces
+[17.025s] running egg_info
+[17.027s] creating ainex_interfaces.egg-info
+[17.099s] writing ainex_interfaces.egg-info/PKG-INFO
+[17.099s] writing dependency_links to ainex_interfaces.egg-info/dependency_links.txt
+[17.100s] writing top-level names to ainex_interfaces.egg-info/top_level.txt
+[17.100s] writing manifest file 'ainex_interfaces.egg-info/SOURCES.txt'
+[17.142s] [  1%] Built target ainex_interfaces__rosidl_generator_type_description
+[17.178s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[17.226s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[17.300s] reading manifest file 'ainex_interfaces.egg-info/SOURCES.txt'
+[17.302s] writing manifest file 'ainex_interfaces.egg-info/SOURCES.txt'
+[17.449s] [  4%] Built target ament_cmake_python_build_ainex_interfaces_egg
+[19.821s] [  4%] Built target ainex_interfaces__cpp
+[20.285s] [  9%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__description.c.o[0m
+[20.285s] [  9%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o[0m
+[20.286s] [  9%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.c.o[0m
+[20.479s] [ 10%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__description.c.o[0m
+[20.512s] [ 12%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.c.o[0m
+[20.634s] [ 14%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o[0m
+[20.729s] [ 15%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o[0m
+[20.845s] [ 17%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o[0m
+[20.890s] [ 18%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o[0m
+[20.940s] [ 20%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o[0m
+[21.105s] [ 21%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o[0m
+[21.212s] [ 23%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o[0m
+[21.746s] [ 25%] [32m[1mLinking C shared library libainex_interfaces__rosidl_generator_c.so[0m
+[21.913s] [ 25%] Built target ainex_interfaces__rosidl_generator_c
+[21.952s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[21.953s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[21.957s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[22.998s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[23.590s] [ 32%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o[0m
+[24.950s] [ 34%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o[0m
+[25.365s] [ 35%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/move_hand__type_support.cpp.o[0m
+[25.586s] [ 37%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o[0m
+[25.736s] [ 39%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/set_motion_params__type_support.cpp.o[0m
+[25.878s] [ 40%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o[0m
+[26.090s] [ 42%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/get_servo_status__type_support.cpp.o[0m
+[26.120s] [ 43%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp.o[0m
+[26.217s] [ 45%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o[0m
+[26.425s] [ 46%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/action/execute_gesture__type_support.cpp.o[0m
+[26.473s] [ 48%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__type_support_c.cpp.o[0m
+[26.639s] [ 50%] [32m[1mLinking C shared library libainex_interfaces__rosidl_typesupport_introspection_c.so[0m
+[26.729s] [ 51%] [32m[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_c.so[0m
+[26.898s] [ 51%] Built target ainex_interfaces__rosidl_typesupport_introspection_c
+[26.967s] [ 51%] Built target ainex_interfaces__rosidl_typesupport_c
+[26.990s] [ 53%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp.o[0m
+[27.027s] [ 54%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[28.350s] [ 56%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/set_motion_params__type_support_c.cpp.o[0m
+[29.435s] [ 57%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o[0m
+[29.633s] [ 59%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[31.331s] [ 60%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/move_hand__type_support.cpp.o[0m
+[31.552s] [ 62%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__type_support_c.cpp.o[0m
+[32.608s] [ 64%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp.o[0m
+[32.728s] [ 65%] [32m[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_cpp.so[0m
+[33.442s] [ 65%] Built target ainex_interfaces__rosidl_typesupport_cpp
+[33.539s] [ 67%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__type_support_c.cpp.o[0m
+[34.242s] [ 68%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/set_motion_params__type_support.cpp.o[0m
+[34.961s] [ 70%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/get_servo_status__type_support.cpp.o[0m
+[35.538s] [ 71%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp.o[0m
+[36.939s] [ 73%] [32m[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[37.479s] [ 73%] Built target ainex_interfaces__rosidl_typesupport_fastrtps_c
+[37.564s] [ 75%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/action/detail/dds_fastrtps/execute_gesture__type_support.cpp.o[0m
+[38.097s] [ 76%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp.o[0m
+[40.242s] [ 78%] [32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.cpp.o[0m
+[41.997s] [ 79%] [32m[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[42.365s] [ 79%] Built target ainex_interfaces__rosidl_typesupport_fastrtps_cpp
+[43.036s] [ 81%] [32m[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[43.370s] [ 81%] Built target ainex_interfaces__rosidl_typesupport_introspection_cpp
+[43.445s] [ 81%] Built target ainex_interfaces
+[43.527s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[47.553s] [ 82%] Built target ainex_interfaces__py
+[47.629s] [ 84%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c.o[0m
+[47.637s] [ 85%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c.o[0m
+[48.212s] [ 87%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c.o[0m
+[48.240s] [ 89%] [32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c.o[0m
+[48.984s] [ 90%] [32m[1mLinking C shared library libainex_interfaces__rosidl_generator_py.so[0m
+[49.163s] [ 90%] Built target ainex_interfaces__rosidl_generator_py
+[49.244s] [ 92%] [32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[49.248s] [ 93%] [32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[49.871s] [ 95%] [32m[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[49.888s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[50.015s] [ 96%] Built target ainex_interfaces_s__rosidl_typesupport_fastrtps_c
+[50.019s] [ 96%] Built target ainex_interfaces_s__rosidl_typesupport_introspection_c
+[50.093s] [ 98%] [32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[50.665s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so[0m
+[50.802s] [100%] Built target ainex_interfaces_s__rosidl_typesupport_c
+[50.867s] Invoked command in '/home/vgi/ainex_ws/build/ainex_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vgi/ainex_ws/build/ainex_interfaces -- -j4 -l4
+[50.908s] Invoking command in '/home/vgi/ainex_ws/build/ainex_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vgi/ainex_ws/build/ainex_interfaces
+[50.938s] -- Install configuration: ""
+[50.938s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/rosidl_interfaces/ainex_interfaces
+[50.939s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.json
+[50.940s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.json
+[50.940s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.json
+[50.941s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.json
+[50.941s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[50.942s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[50.942s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/get_servo_status.h
+[50.942s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/set_motion_params.h
+[50.942s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[50.943s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.c
+[50.943s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__description.c
+[50.943s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.h
+[50.944s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__struct.h
+[50.944s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__struct.h
+[50.944s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__description.c
+[50.945s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__functions.c
+[50.945s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.h
+[50.945s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.h
+[50.946s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__functions.h
+[50.946s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.c
+[50.946s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.c
+[50.947s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__functions.c
+[50.947s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__functions.c
+[50.948s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__functions.h
+[50.948s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__struct.h
+[50.948s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__functions.h
+[50.949s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__description.c
+[50.949s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/move_hand.h
+[50.949s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[50.950s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[50.950s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__struct.h
+[50.950s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__functions.h
+[50.951s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__functions.c
+[50.952s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.c
+[50.952s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.h
+[50.952s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__description.c
+[50.953s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/execute_gesture.h
+[50.953s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg
+[50.954s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h
+[50.954s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/library_path.sh
+[50.955s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/library_path.dsv
+[50.956s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_c.so
+[50.958s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_c.so" to ""
+[50.959s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[50.959s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[50.959s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[50.960s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_fastrtps_c.h
+[50.960s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_fastrtps_c.h
+[50.960s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_fastrtps_c.h
+[50.960s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[50.961s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[50.961s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_fastrtps_c.h
+[50.961s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg
+[50.961s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[50.963s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_c.so
+[50.964s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[50.964s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[50.964s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[50.965s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[50.965s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.c
+[50.965s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.c
+[50.966s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.c
+[50.966s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h
+[50.966s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_c.h
+[50.967s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_introspection_c.h
+[50.967s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[50.967s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[50.968s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.c
+[50.968s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_c.h
+[50.968s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg
+[50.968s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[50.969s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_c.so
+[50.971s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[50.972s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_c.so
+[50.973s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_c.so" to ""
+[50.974s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[50.974s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[50.974s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/move_hand.hpp
+[50.975s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/set_motion_params.hpp
+[50.975s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[50.975s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__struct.hpp
+[50.976s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__struct.hpp
+[50.976s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.hpp
+[50.976s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__builder.hpp
+[50.976s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.hpp
+[50.977s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__builder.hpp
+[50.977s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__struct.hpp
+[50.977s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__traits.hpp
+[50.978s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__builder.hpp
+[50.978s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp
+[50.980s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__traits.hpp
+[50.981s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__traits.hpp
+[50.982s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/get_servo_status.hpp
+[50.983s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[50.984s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/execute_gesture.hpp
+[50.985s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[50.986s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.hpp
+[50.986s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__struct.hpp
+[50.986s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__builder.hpp
+[50.986s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__traits.hpp
+[50.989s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg
+[50.989s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[50.989s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[50.990s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[50.990s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[50.990s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/dds_fastrtps
+[50.990s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_fastrtps_cpp.hpp
+[50.990s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_fastrtps_cpp.hpp
+[50.993s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_fastrtps_cpp.hpp
+[50.994s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[51.000s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[51.001s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/dds_fastrtps
+[51.001s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_fastrtps_cpp.hpp
+[51.001s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg
+[51.002s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[51.005s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[51.005s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[51.006s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces
+[51.006s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv
+[51.006s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail
+[51.006s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp
+[51.007s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_cpp.hpp
+[51.007s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.cpp
+[51.007s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_cpp.hpp
+[51.007s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_introspection_cpp.hpp
+[51.007s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp
+[51.009s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action
+[51.010s] -- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail
+[51.011s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.cpp
+[51.011s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_cpp.hpp
+[51.012s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_cpp.so
+[51.013s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[51.013s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_cpp.so
+[51.013s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_cpp.so" to ""
+[51.013s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/pythonpath.sh
+[51.014s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/pythonpath.dsv
+[51.015s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info
+[51.015s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[51.016s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[51.016s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[51.017s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[51.017s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces
+[51.017s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so
+[51.018s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[51.018s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv
+[51.018s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand.py
+[51.019s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params_s.c
+[51.019s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params.py
+[51.019s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status.py
+[51.020s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/__init__.py
+[51.020s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status_s.c
+[51.020s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand_s.c
+[51.020s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action
+[51.020s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture.py
+[51.021s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture_s.c
+[51.021s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/__init__.py
+[51.021s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[51.022s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/__init__.py
+[51.022s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c
+[51.022s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so
+[51.023s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[51.241s] Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces'...
+[51.242s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/__init__.py'...
+[51.242s] Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action'...
+[51.242s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/__init__.py'...
+[51.242s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture.py'...
+[51.243s] Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv'...
+[51.243s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/__init__.py'...
+[51.243s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status.py'...
+[51.243s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand.py'...
+[51.243s] Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params.py'...
+[51.279s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[51.282s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[51.282s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so
+[51.283s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[51.285s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so
+[51.285s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so" to ""
+[51.286s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_py.so
+[51.288s] -- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_py.so" to ""
+[51.290s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.idl
+[51.291s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.idl
+[51.292s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.idl
+[51.295s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.idl
+[51.296s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.srv
+[51.296s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.srv
+[51.297s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.srv
+[51.297s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.action
+[51.298s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/package_run_dependencies/ainex_interfaces
+[51.298s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/parent_prefix_path/ainex_interfaces
+[51.298s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/ament_prefix_path.sh
+[51.299s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/ament_prefix_path.dsv
+[51.299s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/path.sh
+[51.300s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/path.dsv
+[51.300s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.bash
+[51.300s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.sh
+[51.301s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.zsh
+[51.302s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.dsv
+[51.303s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/package.dsv
+[51.303s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/packages/ainex_interfaces
+[51.304s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cExport.cmake
+[51.304s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cExport-noconfig.cmake
+[51.305s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[51.305s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[51.306s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[51.306s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[51.307s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cExport.cmake
+[51.307s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[51.308s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cppExport.cmake
+[51.308s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[51.308s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[51.310s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[51.313s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[51.314s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cppExport.cmake
+[51.315s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[51.316s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_pyExport.cmake
+[51.317s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[51.318s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake-extras.cmake
+[51.318s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.318s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[51.319s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[51.319s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[51.319s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[51.319s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[51.319s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfacesConfig.cmake
+[51.322s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfacesConfig-version.cmake
+[51.322s] -- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/package.xml
+[51.326s] Invoked command in '/home/vgi/ainex_ws/build/ainex_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vgi/ainex_ws/build/ainex_interfaces

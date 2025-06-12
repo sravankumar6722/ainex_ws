@@ -18,6 +18,7 @@ ainex_arm/scservo_sdk/port_handler.py
 ainex_arm/scservo_sdk/protocol_packet_handler.py
 ainex_arm/scservo_sdk/scservo_def.py
 launch/hand_node.launch.py
+launch/test.launch.py
 resource/ainex_arm
 test/test_copyright.py
 test/test_flake8.py

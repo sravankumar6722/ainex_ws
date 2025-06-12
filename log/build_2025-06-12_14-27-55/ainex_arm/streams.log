@@ -1,0 +1,68 @@
+[4.936s] Invoking command in '/home/vgi/ainex_ws/src/ainex_arm': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vgi/ainex_ws/build/ainex_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ainex_arm build --build-base /home/vgi/ainex_ws/build/ainex_arm/build install --record /home/vgi/ainex_ws/build/ainex_arm/install.log --single-version-externally-managed install_data
+[6.244s] running egg_info
+[6.246s] creating ../../build/ainex_arm/ainex_arm.egg-info
+[6.339s] writing ../../build/ainex_arm/ainex_arm.egg-info/PKG-INFO
+[6.340s] writing dependency_links to ../../build/ainex_arm/ainex_arm.egg-info/dependency_links.txt
+[6.341s] writing entry points to ../../build/ainex_arm/ainex_arm.egg-info/entry_points.txt
+[6.341s] writing requirements to ../../build/ainex_arm/ainex_arm.egg-info/requires.txt
+[6.342s] writing top-level names to ../../build/ainex_arm/ainex_arm.egg-info/top_level.txt
+[6.342s] writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'
+[6.567s] reading manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'
+[6.571s] writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'
+[6.572s] running build
+[6.572s] running build_py
+[6.573s] creating /home/vgi/ainex_ws/build/ainex_arm/build
+[6.573s] creating /home/vgi/ainex_ws/build/ainex_arm/build/lib
+[6.574s] creating /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm
+[6.575s] copying ainex_arm/__init__.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm
+[6.576s] copying ainex_arm/hand_node.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm
+[6.578s] creating /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.579s] copying ainex_arm/scservo_sdk/scservo_def.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.589s] copying ainex_arm/scservo_sdk/packet_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.590s] copying ainex_arm/scservo_sdk/group_sync_write.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.590s] copying ainex_arm/scservo_sdk/group_sync_read.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.590s] copying ainex_arm/scservo_sdk/__init__.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.590s] copying ainex_arm/scservo_sdk/port_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.591s] copying ainex_arm/scservo_sdk/protocol_packet_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk
+[6.591s] running install
+[6.610s] running install_lib
+[6.704s] creating /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm
+[6.704s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/__init__.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm
+[6.705s] creating /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.705s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/scservo_def.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.706s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/packet_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.707s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/group_sync_write.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.708s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/group_sync_read.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.709s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/__init__.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.710s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/port_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.710s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/protocol_packet_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk
+[6.710s] copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/hand_node.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm
+[6.713s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__init__.py to __init__.cpython-312.pyc
+[6.713s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/scservo_def.py to scservo_def.cpython-312.pyc
+[6.717s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/packet_handler.py to packet_handler.cpython-312.pyc
+[6.718s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/group_sync_write.py to group_sync_write.cpython-312.pyc
+[6.721s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/group_sync_read.py to group_sync_read.cpython-312.pyc
+[6.727s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/__init__.py to __init__.cpython-312.pyc
+[6.729s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/port_handler.py to port_handler.cpython-312.pyc
+[6.732s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/protocol_packet_handler.py to protocol_packet_handler.cpython-312.pyc
+[6.749s] byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/hand_node.py to hand_node.cpython-312.pyc
+[6.758s] running install_data
+[6.760s] creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index
+[6.762s] creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index
+[6.766s] creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index/packages
+[6.767s] copying resource/ainex_arm -> /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index/packages
+[6.767s] copying package.xml -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm
+[6.770s] creating /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch
+[6.770s] copying launch/test.launch.py -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch
+[6.770s] copying launch/hand_node.launch.py -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch
+[6.771s] creating /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf
+[6.771s] copying urdf/robot.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf
+[6.771s] copying urdf/robot2.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf
+[6.771s] copying urdf/ainex_arm.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf
+[6.771s] copying urdf/basic_arm.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf
+[6.783s] running install_egg_info
+[6.883s] Copying ../../build/ainex_arm/ainex_arm.egg-info to /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info
+[6.883s] running install_scripts
+[7.769s] Installing hand_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm
+[7.770s] writing list of installed files to '/home/vgi/ainex_ws/build/ainex_arm/install.log'
+[7.991s] Invoked command in '/home/vgi/ainex_ws/src/ainex_arm' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vgi/ainex_ws/build/ainex_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ainex_arm build --build-base /home/vgi/ainex_ws/build/ainex_arm/build install --record /home/vgi/ainex_ws/build/ainex_arm/install.log --single-version-externally-managed install_data

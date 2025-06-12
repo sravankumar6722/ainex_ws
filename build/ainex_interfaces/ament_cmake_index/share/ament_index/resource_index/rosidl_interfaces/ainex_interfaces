@@ -4,7 +4,5 @@ srv/GetServoStatus.idl
 srv/GetServoStatus.srv
 srv/MoveHand.idl
 srv/MoveHand.srv
-srv/RunGesture.idl
-srv/RunGesture.srv
 srv/SetMotionParams.idl
 srv/SetMotionParams.srv

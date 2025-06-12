@@ -1,0 +1,939 @@
+[0.000000] (-) TimerEvent: {}
+[0.000450] (ainex_arm) JobQueued: {'identifier': 'ainex_arm', 'dependencies': OrderedDict()}
+[0.000556] (ainex_interfaces) JobQueued: {'identifier': 'ainex_interfaces', 'dependencies': OrderedDict()}
+[0.001871] (ainex_arm) JobStarted: {'identifier': 'ainex_arm'}
+[0.032097] (ainex_interfaces) JobStarted: {'identifier': 'ainex_interfaces'}
+[0.099353] (-) TimerEvent: {}
+[0.201763] (-) TimerEvent: {}
+[0.302380] (-) TimerEvent: {}
+[0.402911] (-) TimerEvent: {}
+[0.504495] (-) TimerEvent: {}
+[0.606313] (-) TimerEvent: {}
+[0.707825] (-) TimerEvent: {}
+[0.810979] (-) TimerEvent: {}
+[0.911573] (-) TimerEvent: {}
+[1.012394] (-) TimerEvent: {}
+[1.112118] (ainex_interfaces) JobProgress: {'identifier': 'ainex_interfaces', 'progress': 'cmake'}
+[1.112366] (-) TimerEvent: {}
+[1.115314] (ainex_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/vgi/ainex_ws/src/ainex_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/vgi/ainex_ws/install/ainex_interfaces'], 'cwd': '/home/vgi/ainex_ws/build/ainex_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vgi', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/vgi', 'OLDPWD': '/home/vgi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2834', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4357', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/vgi/ainex_ws/install:/home/vgi/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'vgi', 'JOURNAL_STREAM': '8:21792', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vgi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/vgi:@/tmp/.ICE-unix/2665,unix/vgi:/tmp/.ICE-unix/2665', 'INVOCATION_ID': 'bff03fb19a004b1fafdf665d6298edba', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.9A8472', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:757966b0-adc1-4f30-a059-a4c276f605bd', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vgi/ainex_ws/build/ainex_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/robot_ws/install/robot_arm/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy'}), 'shell': False}
+[1.212561] (-) TimerEvent: {}
+[1.314477] (-) TimerEvent: {}
+[1.415174] (-) TimerEvent: {}
+[1.518199] (-) TimerEvent: {}
+[1.528111] (ainex_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.618350] (-) TimerEvent: {}
+[1.719374] (-) TimerEvent: {}
+[1.823058] (-) TimerEvent: {}
+[1.830964] (ainex_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.919809] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.923798] (-) TimerEvent: {}
+[2.027419] (-) TimerEvent: {}
+[2.128096] (-) TimerEvent: {}
+[2.229050] (-) TimerEvent: {}
+[2.333109] (-) TimerEvent: {}
+[2.424869] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.433249] (-) TimerEvent: {}
+[2.516927] (ainex_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.517501] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.520845] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.534132] (-) TimerEvent: {}
+[2.563747] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.636399] (-) TimerEvent: {}
+[2.738249] (-) TimerEvent: {}
+[2.844136] (-) TimerEvent: {}
+[2.945073] (-) TimerEvent: {}
+[3.048769] (-) TimerEvent: {}
+[3.149867] (-) TimerEvent: {}
+[3.252171] (-) TimerEvent: {}
+[3.300506] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.352349] (-) TimerEvent: {}
+[3.402380] (ainex_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.404490] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.406317] (ainex_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.421536] (ainex_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.452698] (-) TimerEvent: {}
+[3.556122] (-) TimerEvent: {}
+[3.656774] (-) TimerEvent: {}
+[3.759815] (-) TimerEvent: {}
+[3.860560] (-) TimerEvent: {}
+[3.964113] (-) TimerEvent: {}
+[4.064737] (-) TimerEvent: {}
+[4.155874] (ainex_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.164893] (-) TimerEvent: {}
+[4.269245] (-) TimerEvent: {}
+[4.369907] (-) TimerEvent: {}
+[4.471539] (-) TimerEvent: {}
+[4.572285] (-) TimerEvent: {}
+[4.673397] (ainex_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.674145] (-) TimerEvent: {}
+[4.723350] (ainex_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.776972] (-) TimerEvent: {}
+[4.877680] (-) TimerEvent: {}
+[4.937031] (ainex_arm) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ainex_arm', 'build', '--build-base', '/home/vgi/ainex_ws/build/ainex_arm/build', 'install', '--record', '/home/vgi/ainex_ws/build/ainex_arm/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vgi/ainex_ws/src/ainex_arm', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vgi', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/vgi', 'OLDPWD': '/home/vgi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2834', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4357', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/vgi/ainex_ws/install:/home/vgi/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'vgi', 'JOURNAL_STREAM': '8:21792', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vgi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/vgi:@/tmp/.ICE-unix/2665,unix/vgi:/tmp/.ICE-unix/2665', 'INVOCATION_ID': 'bff03fb19a004b1fafdf665d6298edba', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.9A8472', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:757966b0-adc1-4f30-a059-a4c276f605bd', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vgi/ainex_ws/build/ainex_arm', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vgi/ainex_ws/build/ainex_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/robot_ws/install/robot_arm/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.963485] (ainex_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.977799] (-) TimerEvent: {}
+[5.078668] (-) TimerEvent: {}
+[5.151309] (ainex_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.178794] (-) TimerEvent: {}
+[5.281168] (-) TimerEvent: {}
+[5.382795] (-) TimerEvent: {}
+[5.487763] (-) TimerEvent: {}
+[5.588401] (-) TimerEvent: {}
+[5.689771] (-) TimerEvent: {}
+[5.790296] (-) TimerEvent: {}
+[5.891175] (-) TimerEvent: {}
+[5.992387] (-) TimerEvent: {}
+[6.094642] (-) TimerEvent: {}
+[6.197632] (-) TimerEvent: {}
+[6.246732] (ainex_arm) StdoutLine: {'line': b'running egg_info\n'}
+[6.248838] (ainex_arm) StdoutLine: {'line': b'creating ../../build/ainex_arm/ainex_arm.egg-info\n'}
+[6.298737] (-) TimerEvent: {}
+[6.341847] (ainex_arm) StdoutLine: {'line': b'writing ../../build/ainex_arm/ainex_arm.egg-info/PKG-INFO\n'}
+[6.342352] (ainex_arm) StdoutLine: {'line': b'writing dependency_links to ../../build/ainex_arm/ainex_arm.egg-info/dependency_links.txt\n'}
+[6.343452] (ainex_arm) StdoutLine: {'line': b'writing entry points to ../../build/ainex_arm/ainex_arm.egg-info/entry_points.txt\n'}
+[6.343837] (ainex_arm) StdoutLine: {'line': b'writing requirements to ../../build/ainex_arm/ainex_arm.egg-info/requires.txt\n'}
+[6.344131] (ainex_arm) StdoutLine: {'line': b'writing top-level names to ../../build/ainex_arm/ainex_arm.egg-info/top_level.txt\n'}
+[6.344322] (ainex_arm) StdoutLine: {'line': b"writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'\n"}
+[6.398887] (-) TimerEvent: {}
+[6.502069] (-) TimerEvent: {}
+[6.569566] (ainex_arm) StdoutLine: {'line': b"reading manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'\n"}
+[6.572998] (ainex_arm) StdoutLine: {'line': b"writing manifest file '../../build/ainex_arm/ainex_arm.egg-info/SOURCES.txt'\n"}
+[6.574165] (ainex_arm) StdoutLine: {'line': b'running build\n'}
+[6.574726] (ainex_arm) StdoutLine: {'line': b'running build_py\n'}
+[6.575179] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/build/ainex_arm/build\n'}
+[6.575590] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/build/ainex_arm/build/lib\n'}
+[6.576245] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm\n'}
+[6.577042] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/__init__.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm\n'}
+[6.578600] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/hand_node.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm\n'}
+[6.580019] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.581783] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/scservo_def.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.591740] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/packet_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.592217] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/group_sync_write.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.592444] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/group_sync_read.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.592714] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/__init__.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.592977] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/port_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.593189] (ainex_arm) StdoutLine: {'line': b'copying ainex_arm/scservo_sdk/protocol_packet_handler.py -> /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk\n'}
+[6.593393] (ainex_arm) StdoutLine: {'line': b'running install\n'}
+[6.608329] (-) TimerEvent: {}
+[6.612583] (ainex_arm) StdoutLine: {'line': b'running install_lib\n'}
+[6.706156] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm\n'}
+[6.706995] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/__init__.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm\n'}
+[6.707430] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.707697] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/scservo_def.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.708066] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/packet_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.708408] (-) TimerEvent: {}
+[6.709119] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/group_sync_write.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.710168] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/group_sync_read.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.711909] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/__init__.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.712380] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/port_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.712648] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/scservo_sdk/protocol_packet_handler.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk\n'}
+[6.712938] (ainex_arm) StdoutLine: {'line': b'copying /home/vgi/ainex_ws/build/ainex_arm/build/lib/ainex_arm/hand_node.py -> /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm\n'}
+[6.714970] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/__init__.py to __init__.cpython-312.pyc\n'}
+[6.715534] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/scservo_def.py to scservo_def.cpython-312.pyc\n'}
+[6.718103] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/packet_handler.py to packet_handler.cpython-312.pyc\n'}
+[6.720213] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/group_sync_write.py to group_sync_write.cpython-312.pyc\n'}
+[6.722924] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/group_sync_read.py to group_sync_read.cpython-312.pyc\n'}
+[6.727748] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/__init__.py to __init__.cpython-312.pyc\n'}
+[6.729644] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/port_handler.py to port_handler.cpython-312.pyc\n'}
+[6.734767] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/scservo_sdk/protocol_packet_handler.py to protocol_packet_handler.cpython-312.pyc\n'}
+[6.751786] (ainex_arm) StdoutLine: {'line': b'byte-compiling /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm/hand_node.py to hand_node.cpython-312.pyc\n'}
+[6.760318] (ainex_arm) StdoutLine: {'line': b'running install_data\n'}
+[6.761697] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index\n'}
+[6.763147] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index\n'}
+[6.765445] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index/packages\n'}
+[6.769136] (ainex_arm) StdoutLine: {'line': b'copying resource/ainex_arm -> /home/vgi/ainex_ws/install/ainex_arm/share/ament_index/resource_index/packages\n'}
+[6.769421] (ainex_arm) StdoutLine: {'line': b'copying package.xml -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm\n'}
+[6.772074] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch\n'}
+[6.772559] (ainex_arm) StdoutLine: {'line': b'copying launch/test.launch.py -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch\n'}
+[6.772846] (ainex_arm) StdoutLine: {'line': b'copying launch/hand_node.launch.py -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/launch\n'}
+[6.773087] (ainex_arm) StdoutLine: {'line': b'creating /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf\n'}
+[6.773364] (ainex_arm) StdoutLine: {'line': b'copying urdf/robot.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf\n'}
+[6.773571] (ainex_arm) StdoutLine: {'line': b'copying urdf/robot2.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf\n'}
+[6.773845] (ainex_arm) StdoutLine: {'line': b'copying urdf/ainex_arm.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf\n'}
+[6.774077] (ainex_arm) StdoutLine: {'line': b'copying urdf/basic_arm.urdf -> /home/vgi/ainex_ws/install/ainex_arm/share/ainex_arm/urdf\n'}
+[6.785402] (ainex_arm) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.809753] (-) TimerEvent: {}
+[6.884728] (ainex_arm) StdoutLine: {'line': b'Copying ../../build/ainex_arm/ainex_arm.egg-info to /home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages/ainex_arm-0.0.0-py3.12.egg-info\n'}
+[6.885497] (ainex_arm) StdoutLine: {'line': b'running install_scripts\n'}
+[6.916721] (-) TimerEvent: {}
+[7.017336] (-) TimerEvent: {}
+[7.118047] (-) TimerEvent: {}
+[7.222223] (-) TimerEvent: {}
+[7.322962] (-) TimerEvent: {}
+[7.426561] (-) TimerEvent: {}
+[7.527202] (-) TimerEvent: {}
+[7.629007] (-) TimerEvent: {}
+[7.730725] (-) TimerEvent: {}
+[7.771488] (ainex_arm) StdoutLine: {'line': b'Installing hand_node script to /home/vgi/ainex_ws/install/ainex_arm/lib/ainex_arm\n'}
+[7.772325] (ainex_arm) StdoutLine: {'line': b"writing list of installed files to '/home/vgi/ainex_ws/build/ainex_arm/install.log'\n"}
+[7.837780] (-) TimerEvent: {}
+[7.941045] (-) TimerEvent: {}
+[7.993395] (ainex_arm) CommandEnded: {'returncode': 0}
+[8.034707] (ainex_arm) JobEnded: {'identifier': 'ainex_arm', 'rc': 0}
+[8.042757] (-) TimerEvent: {}
+[8.143335] (-) TimerEvent: {}
+[8.244739] (-) TimerEvent: {}
+[8.345278] (-) TimerEvent: {}
+[8.445892] (-) TimerEvent: {}
+[8.546593] (-) TimerEvent: {}
+[8.650235] (-) TimerEvent: {}
+[8.750830] (-) TimerEvent: {}
+[8.807896] (ainex_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.852878] (-) TimerEvent: {}
+[8.953564] (-) TimerEvent: {}
+[9.056090] (-) TimerEvent: {}
+[9.156731] (-) TimerEvent: {}
+[9.257351] (-) TimerEvent: {}
+[9.358122] (-) TimerEvent: {}
+[9.458777] (-) TimerEvent: {}
+[9.562082] (-) TimerEvent: {}
+[9.662793] (-) TimerEvent: {}
+[9.764126] (-) TimerEvent: {}
+[9.864668] (-) TimerEvent: {}
+[9.965208] (-) TimerEvent: {}
+[10.065772] (-) TimerEvent: {}
+[10.166304] (-) TimerEvent: {}
+[10.268902] (-) TimerEvent: {}
+[10.370113] (-) TimerEvent: {}
+[10.473948] (-) TimerEvent: {}
+[10.574541] (-) TimerEvent: {}
+[10.676301] (-) TimerEvent: {}
+[10.736810] (ainex_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.776482] (-) TimerEvent: {}
+[10.879881] (-) TimerEvent: {}
+[10.980430] (-) TimerEvent: {}
+[11.083720] (-) TimerEvent: {}
+[11.184342] (-) TimerEvent: {}
+[11.285106] (-) TimerEvent: {}
+[11.386490] (-) TimerEvent: {}
+[11.488418] (-) TimerEvent: {}
+[11.591673] (-) TimerEvent: {}
+[11.692203] (-) TimerEvent: {}
+[11.795642] (-) TimerEvent: {}
+[11.896310] (-) TimerEvent: {}
+[11.998263] (-) TimerEvent: {}
+[12.099836] (-) TimerEvent: {}
+[12.200489] (-) TimerEvent: {}
+[12.301161] (-) TimerEvent: {}
+[12.404768] (-) TimerEvent: {}
+[12.505452] (-) TimerEvent: {}
+[12.608788] (-) TimerEvent: {}
+[12.709665] (-) TimerEvent: {}
+[12.811966] (-) TimerEvent: {}
+[12.912525] (-) TimerEvent: {}
+[13.015747] (-) TimerEvent: {}
+[13.116390] (-) TimerEvent: {}
+[13.217052] (-) TimerEvent: {}
+[13.317587] (-) TimerEvent: {}
+[13.418078] (-) TimerEvent: {}
+[13.500153] (ainex_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.508739] (ainex_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[13.518222] (-) TimerEvent: {}
+[13.618691] (-) TimerEvent: {}
+[13.719175] (-) TimerEvent: {}
+[13.819726] (-) TimerEvent: {}
+[13.920201] (-) TimerEvent: {}
+[13.964993] (ainex_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[14.020303] (-) TimerEvent: {}
+[14.120724] (-) TimerEvent: {}
+[14.221208] (-) TimerEvent: {}
+[14.321706] (-) TimerEvent: {}
+[14.422204] (-) TimerEvent: {}
+[14.522717] (-) TimerEvent: {}
+[14.623192] (-) TimerEvent: {}
+[14.723692] (-) TimerEvent: {}
+[14.824151] (-) TimerEvent: {}
+[14.924644] (-) TimerEvent: {}
+[15.025121] (-) TimerEvent: {}
+[15.125652] (-) TimerEvent: {}
+[15.226104] (-) TimerEvent: {}
+[15.326549] (-) TimerEvent: {}
+[15.427055] (-) TimerEvent: {}
+[15.434942] (ainex_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[15.527826] (-) TimerEvent: {}
+[15.561591] (ainex_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[15.627498] (ainex_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.627905] (-) TimerEvent: {}
+[15.632871] (ainex_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.644782] (ainex_interfaces) StdoutLine: {'line': b'-- Configuring done (14.5s)\n'}
+[15.728069] (-) TimerEvent: {}
+[15.802947] (ainex_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[15.828172] (-) TimerEvent: {}
+[15.849543] (ainex_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/vgi/ainex_ws/build/ainex_interfaces\n'}
+[15.883113] (ainex_interfaces) CommandEnded: {'returncode': 0}
+[15.884555] (ainex_interfaces) JobProgress: {'identifier': 'ainex_interfaces', 'progress': 'build'}
+[15.887959] (ainex_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vgi/ainex_ws/build/ainex_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/vgi/ainex_ws/build/ainex_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vgi', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/vgi', 'OLDPWD': '/home/vgi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2834', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4357', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/vgi/ainex_ws/install:/home/vgi/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'vgi', 'JOURNAL_STREAM': '8:21792', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vgi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/vgi:@/tmp/.ICE-unix/2665,unix/vgi:/tmp/.ICE-unix/2665', 'INVOCATION_ID': 'bff03fb19a004b1fafdf665d6298edba', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.9A8472', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:757966b0-adc1-4f30-a059-a4c276f605bd', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vgi/ainex_ws/build/ainex_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/robot_ws/install/robot_arm/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy'}), 'shell': False}
+[15.928340] (-) TimerEvent: {}
+[16.029256] (-) TimerEvent: {}
+[16.112419] (ainex_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[16.130794] (-) TimerEvent: {}
+[16.143344] (ainex_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_ainex_interfaces\n'}
+[16.231729] (-) TimerEvent: {}
+[16.333757] (-) TimerEvent: {}
+[16.434346] (-) TimerEvent: {}
+[16.535802] (-) TimerEvent: {}
+[16.636394] (-) TimerEvent: {}
+[16.738024] (-) TimerEvent: {}
+[16.840699] (-) TimerEvent: {}
+[16.941154] (-) TimerEvent: {}
+[17.041674] (-) TimerEvent: {}
+[17.057238] (ainex_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[17.059941] (ainex_interfaces) StdoutLine: {'line': b'creating ainex_interfaces.egg-info\n'}
+[17.131729] (ainex_interfaces) StdoutLine: {'line': b'writing ainex_interfaces.egg-info/PKG-INFO\n'}
+[17.132200] (ainex_interfaces) StdoutLine: {'line': b'writing dependency_links to ainex_interfaces.egg-info/dependency_links.txt\n'}
+[17.132487] (ainex_interfaces) StdoutLine: {'line': b'writing top-level names to ainex_interfaces.egg-info/top_level.txt\n'}
+[17.132746] (ainex_interfaces) StdoutLine: {'line': b"writing manifest file 'ainex_interfaces.egg-info/SOURCES.txt'\n"}
+[17.141811] (-) TimerEvent: {}
+[17.174301] (ainex_interfaces) StdoutLine: {'line': b'[  1%] Built target ainex_interfaces__rosidl_generator_type_description\n'}
+[17.211136] (ainex_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[17.242714] (-) TimerEvent: {}
+[17.258396] (ainex_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[17.332805] (ainex_interfaces) StdoutLine: {'line': b"reading manifest file 'ainex_interfaces.egg-info/SOURCES.txt'\n"}
+[17.334359] (ainex_interfaces) StdoutLine: {'line': b"writing manifest file 'ainex_interfaces.egg-info/SOURCES.txt'\n"}
+[17.342882] (-) TimerEvent: {}
+[17.443560] (-) TimerEvent: {}
+[17.482105] (ainex_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_ainex_interfaces_egg\n'}
+[17.543725] (-) TimerEvent: {}
+[17.644201] (-) TimerEvent: {}
+[17.744704] (-) TimerEvent: {}
+[17.845179] (-) TimerEvent: {}
+[17.945649] (-) TimerEvent: {}
+[18.046103] (-) TimerEvent: {}
+[18.146577] (-) TimerEvent: {}
+[18.247134] (-) TimerEvent: {}
+[18.347656] (-) TimerEvent: {}
+[18.448325] (-) TimerEvent: {}
+[18.551719] (-) TimerEvent: {}
+[18.652263] (-) TimerEvent: {}
+[18.752819] (-) TimerEvent: {}
+[18.853387] (-) TimerEvent: {}
+[18.953905] (-) TimerEvent: {}
+[19.054391] (-) TimerEvent: {}
+[19.154888] (-) TimerEvent: {}
+[19.255377] (-) TimerEvent: {}
+[19.358900] (-) TimerEvent: {}
+[19.459454] (-) TimerEvent: {}
+[19.560004] (-) TimerEvent: {}
+[19.660538] (-) TimerEvent: {}
+[19.761140] (-) TimerEvent: {}
+[19.853899] (ainex_interfaces) StdoutLine: {'line': b'[  4%] Built target ainex_interfaces__cpp\n'}
+[19.861321] (-) TimerEvent: {}
+[19.967031] (-) TimerEvent: {}
+[20.067585] (-) TimerEvent: {}
+[20.168165] (-) TimerEvent: {}
+[20.268874] (-) TimerEvent: {}
+[20.317410] (ainex_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__description.c.o\x1b[0m\n'}
+[20.318139] (ainex_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o\x1b[0m\n'}
+[20.318549] (ainex_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/move_hand__functions.c.o\x1b[0m\n'}
+[20.370754] (-) TimerEvent: {}
+[20.471380] (-) TimerEvent: {}
+[20.511734] (ainex_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__description.c.o\x1b[0m\n'}
+[20.544494] (ainex_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__functions.c.o\x1b[0m\n'}
+[20.572737] (-) TimerEvent: {}
+[20.666818] (ainex_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o\x1b[0m\n'}
+[20.672900] (-) TimerEvent: {}
+[20.762040] (ainex_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__description.c.o\x1b[0m\n'}
+[20.773073] (-) TimerEvent: {}
+[20.873730] (-) TimerEvent: {}
+[20.878098] (ainex_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__functions.c.o\x1b[0m\n'}
+[20.922150] (ainex_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o\x1b[0m\n'}
+[20.972311] (ainex_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__description.c.o\x1b[0m\n'}
+[20.973859] (-) TimerEvent: {}
+[21.078026] (-) TimerEvent: {}
+[21.137169] (ainex_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__functions.c.o\x1b[0m\n'}
+[21.178204] (-) TimerEvent: {}
+[21.244337] (ainex_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o\x1b[0m\n'}
+[21.279284] (-) TimerEvent: {}
+[21.386094] (-) TimerEvent: {}
+[21.486599] (-) TimerEvent: {}
+[21.587123] (-) TimerEvent: {}
+[21.690714] (-) TimerEvent: {}
+[21.778753] (ainex_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libainex_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[21.790866] (-) TimerEvent: {}
+[21.891407] (-) TimerEvent: {}
+[21.945491] (ainex_interfaces) StdoutLine: {'line': b'[ 25%] Built target ainex_interfaces__rosidl_generator_c\n'}
+[21.984831] (ainex_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[21.985454] (ainex_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[21.989671] (ainex_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.993809] (-) TimerEvent: {}
+[22.094455] (-) TimerEvent: {}
+[22.197716] (-) TimerEvent: {}
+[22.298286] (-) TimerEvent: {}
+[22.398864] (-) TimerEvent: {}
+[22.499421] (-) TimerEvent: {}
+[22.600011] (-) TimerEvent: {}
+[22.700552] (-) TimerEvent: {}
+[22.801445] (-) TimerEvent: {}
+[22.902554] (-) TimerEvent: {}
+[23.003770] (-) TimerEvent: {}
+[23.030388] (ainex_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[23.106705] (-) TimerEvent: {}
+[23.207238] (-) TimerEvent: {}
+[23.307798] (-) TimerEvent: {}
+[23.408333] (-) TimerEvent: {}
+[23.508922] (-) TimerEvent: {}
+[23.611732] (-) TimerEvent: {}
+[23.622861] (ainex_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/move_hand__type_support.cpp.o\x1b[0m\n'}
+[23.712381] (-) TimerEvent: {}
+[23.812962] (-) TimerEvent: {}
+[23.913569] (-) TimerEvent: {}
+[24.016884] (-) TimerEvent: {}
+[24.122964] (-) TimerEvent: {}
+[24.223526] (-) TimerEvent: {}
+[24.324146] (-) TimerEvent: {}
+[24.428980] (-) TimerEvent: {}
+[24.529511] (-) TimerEvent: {}
+[24.630115] (-) TimerEvent: {}
+[24.733978] (-) TimerEvent: {}
+[24.838714] (-) TimerEvent: {}
+[24.939293] (-) TimerEvent: {}
+[24.982379] (ainex_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/move_hand__type_support.c.o\x1b[0m\n'}
+[25.039474] (-) TimerEvent: {}
+[25.142732] (-) TimerEvent: {}
+[25.243299] (-) TimerEvent: {}
+[25.345756] (-) TimerEvent: {}
+[25.397800] (ainex_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/move_hand__type_support.cpp.o\x1b[0m\n'}
+[25.445910] (-) TimerEvent: {}
+[25.547973] (-) TimerEvent: {}
+[25.618441] (ainex_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/set_motion_params__type_support.c.o\x1b[0m\n'}
+[25.652787] (-) TimerEvent: {}
+[25.753479] (-) TimerEvent: {}
+[25.768798] (ainex_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/set_motion_params__type_support.cpp.o\x1b[0m\n'}
+[25.853666] (-) TimerEvent: {}
+[25.909946] (ainex_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/srv/detail/get_servo_status__type_support.c.o\x1b[0m\n'}
+[25.956817] (-) TimerEvent: {}
+[26.057477] (-) TimerEvent: {}
+[26.122913] (ainex_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/srv/get_servo_status__type_support.cpp.o\x1b[0m\n'}
+[26.153026] (ainex_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/set_motion_params__type_support.cpp.o\x1b[0m\n'}
+[26.157702] (-) TimerEvent: {}
+[26.249884] (ainex_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ainex_interfaces/action/detail/execute_gesture__type_support.c.o\x1b[0m\n'}
+[26.266739] (-) TimerEvent: {}
+[26.368734] (-) TimerEvent: {}
+[26.457526] (ainex_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ainex_interfaces/action/execute_gesture__type_support.cpp.o\x1b[0m\n'}
+[26.468898] (-) TimerEvent: {}
+[26.505890] (ainex_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/move_hand__type_support_c.cpp.o\x1b[0m\n'}
+[26.569045] (-) TimerEvent: {}
+[26.671221] (ainex_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libainex_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[26.671744] (-) TimerEvent: {}
+[26.761461] (ainex_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[26.772760] (-) TimerEvent: {}
+[26.875002] (-) TimerEvent: {}
+[26.930657] (ainex_interfaces) StdoutLine: {'line': b'[ 51%] Built target ainex_interfaces__rosidl_typesupport_introspection_c\n'}
+[26.976775] (-) TimerEvent: {}
+[26.999113] (ainex_interfaces) StdoutLine: {'line': b'[ 51%] Built target ainex_interfaces__rosidl_typesupport_c\n'}
+[27.022561] (ainex_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/srv/get_servo_status__type_support.cpp.o\x1b[0m\n'}
+[27.059970] (ainex_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[27.076940] (-) TimerEvent: {}
+[27.179188] (-) TimerEvent: {}
+[27.279736] (-) TimerEvent: {}
+[27.380942] (-) TimerEvent: {}
+[27.481936] (-) TimerEvent: {}
+[27.583275] (-) TimerEvent: {}
+[27.684978] (-) TimerEvent: {}
+[27.789937] (-) TimerEvent: {}
+[27.890583] (-) TimerEvent: {}
+[27.991201] (-) TimerEvent: {}
+[28.091753] (-) TimerEvent: {}
+[28.196994] (-) TimerEvent: {}
+[28.307682] (-) TimerEvent: {}
+[28.382312] (ainex_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/set_motion_params__type_support_c.cpp.o\x1b[0m\n'}
+[28.408735] (-) TimerEvent: {}
+[28.509303] (-) TimerEvent: {}
+[28.611719] (-) TimerEvent: {}
+[28.712303] (-) TimerEvent: {}
+[28.812896] (-) TimerEvent: {}
+[28.915775] (-) TimerEvent: {}
+[29.016402] (-) TimerEvent: {}
+[29.118735] (-) TimerEvent: {}
+[29.220727] (-) TimerEvent: {}
+[29.321276] (-) TimerEvent: {}
+[29.421931] (-) TimerEvent: {}
+[29.467292] (ainex_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ainex_interfaces/action/execute_gesture__type_support.cpp.o\x1b[0m\n'}
+[29.522090] (-) TimerEvent: {}
+[29.624820] (-) TimerEvent: {}
+[29.665175] (ainex_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[29.724980] (-) TimerEvent: {}
+[29.828030] (-) TimerEvent: {}
+[29.928628] (-) TimerEvent: {}
+[30.029173] (-) TimerEvent: {}
+[30.129804] (-) TimerEvent: {}
+[30.232100] (-) TimerEvent: {}
+[30.332696] (-) TimerEvent: {}
+[30.435730] (-) TimerEvent: {}
+[30.536271] (-) TimerEvent: {}
+[30.636830] (-) TimerEvent: {}
+[30.739729] (-) TimerEvent: {}
+[30.840287] (-) TimerEvent: {}
+[30.945057] (-) TimerEvent: {}
+[31.045662] (-) TimerEvent: {}
+[31.150999] (-) TimerEvent: {}
+[31.251571] (-) TimerEvent: {}
+[31.352883] (-) TimerEvent: {}
+[31.363774] (ainex_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/move_hand__type_support.cpp.o\x1b[0m\n'}
+[31.453049] (-) TimerEvent: {}
+[31.553718] (-) TimerEvent: {}
+[31.584759] (ainex_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/srv/detail/get_servo_status__type_support_c.cpp.o\x1b[0m\n'}
+[31.653886] (-) TimerEvent: {}
+[31.754475] (-) TimerEvent: {}
+[31.860030] (-) TimerEvent: {}
+[31.960638] (-) TimerEvent: {}
+[32.064003] (-) TimerEvent: {}
+[32.167015] (-) TimerEvent: {}
+[32.267563] (-) TimerEvent: {}
+[32.372915] (-) TimerEvent: {}
+[32.473558] (-) TimerEvent: {}
+[32.574198] (-) TimerEvent: {}
+[32.640298] (ainex_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/move_hand__type_support.cpp.o\x1b[0m\n'}
+[32.674380] (-) TimerEvent: {}
+[32.760883] (ainex_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[32.779731] (-) TimerEvent: {}
+[32.880326] (-) TimerEvent: {}
+[32.980978] (-) TimerEvent: {}
+[33.081587] (-) TimerEvent: {}
+[33.182187] (-) TimerEvent: {}
+[33.284970] (-) TimerEvent: {}
+[33.391748] (-) TimerEvent: {}
+[33.474134] (ainex_interfaces) StdoutLine: {'line': b'[ 65%] Built target ainex_interfaces__rosidl_typesupport_cpp\n'}
+[33.491913] (-) TimerEvent: {}
+[33.571281] (ainex_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ainex_interfaces/action/detail/execute_gesture__type_support_c.cpp.o\x1b[0m\n'}
+[33.592080] (-) TimerEvent: {}
+[33.692710] (-) TimerEvent: {}
+[33.794795] (-) TimerEvent: {}
+[33.898020] (-) TimerEvent: {}
+[33.998646] (-) TimerEvent: {}
+[34.099285] (-) TimerEvent: {}
+[34.201773] (-) TimerEvent: {}
+[34.275047] (ainex_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/set_motion_params__type_support.cpp.o\x1b[0m\n'}
+[34.301940] (-) TimerEvent: {}
+[34.403769] (-) TimerEvent: {}
+[34.504350] (-) TimerEvent: {}
+[34.605010] (-) TimerEvent: {}
+[34.709032] (-) TimerEvent: {}
+[34.812758] (-) TimerEvent: {}
+[34.913392] (-) TimerEvent: {}
+[34.993853] (ainex_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/srv/detail/dds_fastrtps/get_servo_status__type_support.cpp.o\x1b[0m\n'}
+[35.013559] (-) TimerEvent: {}
+[35.115999] (-) TimerEvent: {}
+[35.219057] (-) TimerEvent: {}
+[35.319710] (-) TimerEvent: {}
+[35.424122] (-) TimerEvent: {}
+[35.524702] (-) TimerEvent: {}
+[35.570473] (ainex_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp.o\x1b[0m\n'}
+[35.626742] (-) TimerEvent: {}
+[35.727304] (-) TimerEvent: {}
+[35.827931] (-) TimerEvent: {}
+[35.931046] (-) TimerEvent: {}
+[36.035934] (-) TimerEvent: {}
+[36.136526] (-) TimerEvent: {}
+[36.237168] (-) TimerEvent: {}
+[36.342035] (-) TimerEvent: {}
+[36.442683] (-) TimerEvent: {}
+[36.543244] (-) TimerEvent: {}
+[36.643880] (-) TimerEvent: {}
+[36.746733] (-) TimerEvent: {}
+[36.847299] (-) TimerEvent: {}
+[36.953062] (-) TimerEvent: {}
+[36.971342] (ainex_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[37.053240] (-) TimerEvent: {}
+[37.153914] (-) TimerEvent: {}
+[37.257088] (-) TimerEvent: {}
+[37.357752] (-) TimerEvent: {}
+[37.458357] (-) TimerEvent: {}
+[37.511937] (ainex_interfaces) StdoutLine: {'line': b'[ 73%] Built target ainex_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[37.558529] (-) TimerEvent: {}
+[37.596278] (ainex_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ainex_interfaces/action/detail/dds_fastrtps/execute_gesture__type_support.cpp.o\x1b[0m\n'}
+[37.658714] (-) TimerEvent: {}
+[37.762215] (-) TimerEvent: {}
+[37.865733] (-) TimerEvent: {}
+[37.966325] (-) TimerEvent: {}
+[38.066960] (-) TimerEvent: {}
+[38.129983] (ainex_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp.o\x1b[0m\n'}
+[38.167771] (-) TimerEvent: {}
+[38.272748] (-) TimerEvent: {}
+[38.373317] (-) TimerEvent: {}
+[38.473936] (-) TimerEvent: {}
+[38.578018] (-) TimerEvent: {}
+[38.681024] (-) TimerEvent: {}
+[38.786791] (-) TimerEvent: {}
+[38.887426] (-) TimerEvent: {}
+[38.991095] (-) TimerEvent: {}
+[39.094007] (-) TimerEvent: {}
+[39.198026] (-) TimerEvent: {}
+[39.298771] (-) TimerEvent: {}
+[39.399320] (-) TimerEvent: {}
+[39.499917] (-) TimerEvent: {}
+[39.600513] (-) TimerEvent: {}
+[39.701111] (-) TimerEvent: {}
+[39.801729] (-) TimerEvent: {}
+[39.902279] (-) TimerEvent: {}
+[40.002884] (-) TimerEvent: {}
+[40.103455] (-) TimerEvent: {}
+[40.205007] (-) TimerEvent: {}
+[40.274411] (ainex_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/ainex_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ainex_interfaces/action/detail/execute_gesture__type_support.cpp.o\x1b[0m\n'}
+[40.305180] (-) TimerEvent: {}
+[40.408020] (-) TimerEvent: {}
+[40.508566] (-) TimerEvent: {}
+[40.612039] (-) TimerEvent: {}
+[40.712602] (-) TimerEvent: {}
+[40.813196] (-) TimerEvent: {}
+[40.935557] (-) TimerEvent: {}
+[41.036136] (-) TimerEvent: {}
+[41.138989] (-) TimerEvent: {}
+[41.239542] (-) TimerEvent: {}
+[41.340120] (-) TimerEvent: {}
+[41.440694] (-) TimerEvent: {}
+[41.541266] (-) TimerEvent: {}
+[41.641998] (-) TimerEvent: {}
+[41.742582] (-) TimerEvent: {}
+[41.843188] (-) TimerEvent: {}
+[41.943752] (-) TimerEvent: {}
+[42.030105] (ainex_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[42.043926] (-) TimerEvent: {}
+[42.144942] (-) TimerEvent: {}
+[42.247941] (-) TimerEvent: {}
+[42.348774] (-) TimerEvent: {}
+[42.397360] (ainex_interfaces) StdoutLine: {'line': b'[ 79%] Built target ainex_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[42.448932] (-) TimerEvent: {}
+[42.549601] (-) TimerEvent: {}
+[42.652340] (-) TimerEvent: {}
+[42.755918] (-) TimerEvent: {}
+[42.856426] (-) TimerEvent: {}
+[42.956949] (-) TimerEvent: {}
+[43.057491] (-) TimerEvent: {}
+[43.069016] (ainex_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libainex_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[43.157718] (-) TimerEvent: {}
+[43.258296] (-) TimerEvent: {}
+[43.358877] (-) TimerEvent: {}
+[43.403087] (ainex_interfaces) StdoutLine: {'line': b'[ 81%] Built target ainex_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[43.459041] (-) TimerEvent: {}
+[43.477832] (ainex_interfaces) StdoutLine: {'line': b'[ 81%] Built target ainex_interfaces\n'}
+[43.559652] (ainex_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[43.560128] (-) TimerEvent: {}
+[43.660641] (-) TimerEvent: {}
+[43.761119] (-) TimerEvent: {}
+[43.861595] (-) TimerEvent: {}
+[43.962090] (-) TimerEvent: {}
+[44.062567] (-) TimerEvent: {}
+[44.163048] (-) TimerEvent: {}
+[44.263501] (-) TimerEvent: {}
+[44.363978] (-) TimerEvent: {}
+[44.464431] (-) TimerEvent: {}
+[44.564934] (-) TimerEvent: {}
+[44.665394] (-) TimerEvent: {}
+[44.765877] (-) TimerEvent: {}
+[44.866347] (-) TimerEvent: {}
+[44.966850] (-) TimerEvent: {}
+[45.067305] (-) TimerEvent: {}
+[45.167769] (-) TimerEvent: {}
+[45.268235] (-) TimerEvent: {}
+[45.368703] (-) TimerEvent: {}
+[45.469165] (-) TimerEvent: {}
+[45.569652] (-) TimerEvent: {}
+[45.670139] (-) TimerEvent: {}
+[45.770631] (-) TimerEvent: {}
+[45.871114] (-) TimerEvent: {}
+[45.971571] (-) TimerEvent: {}
+[46.073581] (-) TimerEvent: {}
+[46.174111] (-) TimerEvent: {}
+[46.274587] (-) TimerEvent: {}
+[46.375070] (-) TimerEvent: {}
+[46.475535] (-) TimerEvent: {}
+[46.576022] (-) TimerEvent: {}
+[46.676488] (-) TimerEvent: {}
+[46.776963] (-) TimerEvent: {}
+[46.877417] (-) TimerEvent: {}
+[46.977902] (-) TimerEvent: {}
+[47.078356] (-) TimerEvent: {}
+[47.178832] (-) TimerEvent: {}
+[47.279288] (-) TimerEvent: {}
+[47.380740] (-) TimerEvent: {}
+[47.481306] (-) TimerEvent: {}
+[47.581878] (-) TimerEvent: {}
+[47.585882] (ainex_interfaces) StdoutLine: {'line': b'[ 82%] Built target ainex_interfaces__py\n'}
+[47.661934] (ainex_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_move_hand_s.c.o\x1b[0m\n'}
+[47.669733] (ainex_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_set_motion_params_s.c.o\x1b[0m\n'}
+[47.682035] (-) TimerEvent: {}
+[47.785990] (-) TimerEvent: {}
+[47.886506] (-) TimerEvent: {}
+[47.987083] (-) TimerEvent: {}
+[48.087634] (-) TimerEvent: {}
+[48.188176] (-) TimerEvent: {}
+[48.244997] (ainex_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/action/_execute_gesture_s.c.o\x1b[0m\n'}
+[48.272787] (ainex_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ainex_interfaces/srv/_get_servo_status_s.c.o\x1b[0m\n'}
+[48.289755] (-) TimerEvent: {}
+[48.390305] (-) TimerEvent: {}
+[48.490871] (-) TimerEvent: {}
+[48.591416] (-) TimerEvent: {}
+[48.691989] (-) TimerEvent: {}
+[48.792582] (-) TimerEvent: {}
+[48.898960] (-) TimerEvent: {}
+[48.999509] (-) TimerEvent: {}
+[49.016196] (ainex_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libainex_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[49.100338] (-) TimerEvent: {}
+[49.195767] (ainex_interfaces) StdoutLine: {'line': b'[ 90%] Built target ainex_interfaces__rosidl_generator_py\n'}
+[49.200505] (-) TimerEvent: {}
+[49.276897] (ainex_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[49.280914] (ainex_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[49.300706] (-) TimerEvent: {}
+[49.401256] (-) TimerEvent: {}
+[49.501880] (-) TimerEvent: {}
+[49.602761] (-) TimerEvent: {}
+[49.703320] (-) TimerEvent: {}
+[49.806018] (-) TimerEvent: {}
+[49.903882] (ainex_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[49.906147] (-) TimerEvent: {}
+[49.920639] (ainex_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[50.006339] (-) TimerEvent: {}
+[50.047492] (ainex_interfaces) StdoutLine: {'line': b'[ 96%] Built target ainex_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[50.051661] (ainex_interfaces) StdoutLine: {'line': b'[ 96%] Built target ainex_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[50.106500] (-) TimerEvent: {}
+[50.125712] (ainex_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/ainex_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[50.207001] (-) TimerEvent: {}
+[50.308165] (-) TimerEvent: {}
+[50.408702] (-) TimerEvent: {}
+[50.509205] (-) TimerEvent: {}
+[50.609733] (-) TimerEvent: {}
+[50.698072] (ainex_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[50.709896] (-) TimerEvent: {}
+[50.810427] (-) TimerEvent: {}
+[50.834751] (ainex_interfaces) StdoutLine: {'line': b'[100%] Built target ainex_interfaces_s__rosidl_typesupport_c\n'}
+[50.899532] (ainex_interfaces) CommandEnded: {'returncode': 0}
+[50.901231] (ainex_interfaces) JobProgress: {'identifier': 'ainex_interfaces', 'progress': 'install'}
+[50.910533] (-) TimerEvent: {}
+[50.937867] (ainex_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vgi/ainex_ws/build/ainex_interfaces'], 'cwd': '/home/vgi/ainex_ws/build/ainex_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vgi', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/vgi', 'OLDPWD': '/home/vgi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2834', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4357', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/vgi/ainex_ws/install:/home/vgi/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'vgi', 'JOURNAL_STREAM': '8:21792', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vgi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/vgi:@/tmp/.ICE-unix/2665,unix/vgi:/tmp/.ICE-unix/2665', 'INVOCATION_ID': 'bff03fb19a004b1fafdf665d6298edba', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.9A8472', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:757966b0-adc1-4f30-a059-a4c276f605bd', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vgi/ainex_ws/build/ainex_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages:/home/vgi/ainex_ws/install/ainex_arm/lib/python3.12/site-packages:/home/vgi/robot_ws/install/robot_arm/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/vgi/ainex_ws/install/ainex_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/vgi/ainex_ws/install/ainex_arm:/home/vgi/robot_ws/install/robot_arm:/opt/ros/jazzy'}), 'shell': False}
+[50.970691] (ainex_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[50.971314] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/rosidl_interfaces/ainex_interfaces\n'}
+[50.972014] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.json\n'}
+[50.972447] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.json\n'}
+[50.972919] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.json\n'}
+[50.973468] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.json\n'}
+[50.973994] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[50.974402] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[50.974799] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/get_servo_status.h\n'}
+[50.975113] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/set_motion_params.h\n'}
+[50.975393] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[50.975665] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.c\n'}
+[50.975972] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__description.c\n'}
+[50.976259] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.h\n'}
+[50.976545] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__struct.h\n'}
+[50.976863] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__struct.h\n'}
+[50.977167] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__description.c\n'}
+[50.977556] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__functions.c\n'}
+[50.977988] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.h\n'}
+[50.978301] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.h\n'}
+[50.978632] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__functions.h\n'}
+[50.979054] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.c\n'}
+[50.979374] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.c\n'}
+[50.979719] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__functions.c\n'}
+[50.980127] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__functions.c\n'}
+[50.980523] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__functions.h\n'}
+[50.980954] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__struct.h\n'}
+[50.981299] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__functions.h\n'}
+[50.981684] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__description.c\n'}
+[50.982068] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/move_hand.h\n'}
+[50.982375] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[50.982678] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[50.982990] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__struct.h\n'}
+[50.983277] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__functions.h\n'}
+[50.983989] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__functions.c\n'}
+[50.984618] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.c\n'}
+[50.984957] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.h\n'}
+[50.985273] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__description.c\n'}
+[50.985863] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/execute_gesture.h\n'}
+[50.986171] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg\n'}
+[50.986450] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[50.987056] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/library_path.sh\n'}
+[50.987480] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/library_path.dsv\n'}
+[50.988335] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_c.so\n'}
+[50.991014] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_c.so" to ""\n'}
+[50.991721] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[50.992044] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[50.992247] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[50.992432] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_fastrtps_c.h\n'}
+[50.992803] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_fastrtps_c.h\n'}
+[50.993041] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_fastrtps_c.h\n'}
+[50.993239] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[50.993582] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[50.993835] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_fastrtps_c.h\n'}
+[50.994042] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg\n'}
+[50.994243] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[50.996236] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[50.996757] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[50.997105] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[50.997326] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[50.997708] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[50.998008] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.c\n'}
+[50.998273] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.c\n'}
+[50.998584] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.c\n'}
+[50.998884] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_c.h\n'}
+[50.999197] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_c.h\n'}
+[50.999495] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_introspection_c.h\n'}
+[50.999841] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[51.000068] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[51.000353] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.c\n'}
+[51.000703] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_c.h\n'}
+[51.001026] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg\n'}
+[51.001326] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[51.001663] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[51.004094] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[51.004541] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_c.so\n'}
+[51.006093] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[51.006491] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[51.006756] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[51.007139] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/move_hand.hpp\n'}
+[51.007539] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/set_motion_params.hpp\n'}
+[51.007893] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[51.008151] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__struct.hpp\n'}
+[51.008420] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__struct.hpp\n'}
+[51.008719] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.hpp\n'}
+[51.009053] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__builder.hpp\n'}
+[51.009278] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.hpp\n'}
+[51.009583] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__builder.hpp\n'}
+[51.009822] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__struct.hpp\n'}
+[51.010180] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__traits.hpp\n'}
+[51.010493] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__builder.hpp\n'}
+[51.010875] (-) TimerEvent: {}
+[51.011338] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.hpp\n'}
+[51.011588] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__traits.hpp\n'}
+[51.012900] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__traits.hpp\n'}
+[51.013861] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/get_servo_status.hpp\n'}
+[51.015018] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[51.016121] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/execute_gesture.hpp\n'}
+[51.016912] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[51.017816] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.hpp\n'}
+[51.018909] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__struct.hpp\n'}
+[51.019152] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__builder.hpp\n'}
+[51.019349] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__traits.hpp\n'}
+[51.019536] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg\n'}
+[51.021995] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[51.022260] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[51.022457] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[51.022683] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[51.022896] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/dds_fastrtps\n'}
+[51.023080] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[51.023262] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[51.023463] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[51.026398] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[51.027943] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[51.033651] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/dds_fastrtps\n'}
+[51.034000] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[51.034228] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg\n'}
+[51.034432] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[51.037321] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[51.038295] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[51.038552] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces\n'}
+[51.038879] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv\n'}
+[51.039094] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail\n'}
+[51.039286] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__type_support.cpp\n'}
+[51.039478] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.039704] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/move_hand__type_support.cpp\n'}
+[51.039914] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.040107] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/get_servo_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.040289] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/srv/detail/set_motion_params__type_support.cpp\n'}
+[51.040480] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action\n'}
+[51.042464] (ainex_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail\n'}
+[51.043460] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__type_support.cpp\n'}
+[51.044246] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/include/ainex_interfaces/ainex_interfaces/action/detail/execute_gesture__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.044725] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[51.045111] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[51.045724] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_cpp.so\n'}
+[51.046025] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[51.046328] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/pythonpath.sh\n'}
+[51.046600] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/pythonpath.dsv\n'}
+[51.046916] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info\n'}
+[51.048033] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[51.048512] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[51.048987] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[51.049399] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[51.049698] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces\n'}
+[51.050192] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[51.050553] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[51.050994] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv\n'}
+[51.051295] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand.py\n'}
+[51.051600] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params_s.c\n'}
+[51.051950] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params.py\n'}
+[51.052319] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status.py\n'}
+[51.052521] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/__init__.py\n'}
+[51.052814] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status_s.c\n'}
+[51.053011] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand_s.c\n'}
+[51.053190] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action\n'}
+[51.053402] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture.py\n'}
+[51.053585] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture_s.c\n'}
+[51.053989] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/__init__.py\n'}
+[51.054285] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[51.054520] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/__init__.py\n'}
+[51.054873] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[51.055096] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so\n'}
+[51.055587] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/_ainex_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[51.111025] (-) TimerEvent: {}
+[51.211571] (-) TimerEvent: {}
+[51.274107] (ainex_interfaces) StdoutLine: {'line': b"Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces'...\n"}
+[51.274569] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/__init__.py'...\n"}
+[51.274848] (ainex_interfaces) StdoutLine: {'line': b"Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action'...\n"}
+[51.275082] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/__init__.py'...\n"}
+[51.275289] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/action/_execute_gesture.py'...\n"}
+[51.275512] (ainex_interfaces) StdoutLine: {'line': b"Listing '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv'...\n"}
+[51.275776] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/__init__.py'...\n"}
+[51.275999] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_get_servo_status.py'...\n"}
+[51.276194] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_move_hand.py'...\n"}
+[51.276390] (ainex_interfaces) StdoutLine: {'line': b"Compiling '/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/srv/_set_motion_params.py'...\n"}
+[51.311596] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[51.312164] (-) TimerEvent: {}
+[51.312631] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[51.314981] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[51.315727] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[51.316598] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so\n'}
+[51.318310] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/python3.12/site-packages/ainex_interfaces/ainex_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[51.318555] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_py.so\n'}
+[51.320377] (ainex_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/vgi/ainex_ws/install/ainex_interfaces/lib/libainex_interfaces__rosidl_generator_py.so" to ""\n'}
+[51.321398] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.idl\n'}
+[51.324143] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.idl\n'}
+[51.324715] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.idl\n'}
+[51.325323] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.idl\n'}
+[51.328299] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/MoveHand.srv\n'}
+[51.329233] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/SetMotionParams.srv\n'}
+[51.329726] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/srv/GetServoStatus.srv\n'}
+[51.330092] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/action/ExecuteGesture.action\n'}
+[51.330458] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/package_run_dependencies/ainex_interfaces\n'}
+[51.330830] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/parent_prefix_path/ainex_interfaces\n'}
+[51.331227] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/ament_prefix_path.sh\n'}
+[51.331564] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/ament_prefix_path.dsv\n'}
+[51.331910] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/path.sh\n'}
+[51.332356] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/environment/path.dsv\n'}
+[51.332647] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.bash\n'}
+[51.333127] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.sh\n'}
+[51.333561] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.zsh\n'}
+[51.334185] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/local_setup.dsv\n'}
+[51.335248] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/package.dsv\n'}
+[51.335917] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ament_index/resource_index/packages/ainex_interfaces\n'}
+[51.336362] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cExport.cmake\n'}
+[51.336714] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[51.337140] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[51.337753] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[51.338300] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[51.338807] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[51.339414] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[51.339905] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[51.340349] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_cppExport.cmake\n'}
+[51.340813] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[51.341112] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[51.341650] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[51.343384] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[51.346003] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[51.347452] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[51.348802] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_pyExport.cmake\n'}
+[51.349352] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/export_ainex_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[51.350401] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[51.350910] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[51.351166] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[51.351398] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[51.351657] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[51.351926] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[51.352139] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[51.352370] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfacesConfig.cmake\n'}
+[51.352602] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/cmake/ainex_interfacesConfig-version.cmake\n'}
+[51.355177] (ainex_interfaces) StdoutLine: {'line': b'-- Installing: /home/vgi/ainex_ws/install/ainex_interfaces/share/ainex_interfaces/package.xml\n'}
+[51.357001] (ainex_interfaces) CommandEnded: {'returncode': 0}
+[51.413628] (-) TimerEvent: {}
+[51.427478] (ainex_interfaces) JobEnded: {'identifier': 'ainex_interfaces', 'rc': 0}
+[51.428854] (-) EventReactorShutdown: {}

@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/action/ExecuteGesture.json" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/GetServoStatus.json" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json"
-  "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/RunGesture.json" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json"
   "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/SetMotionParams.json" "/home/vgi/ainex_ws/build/ainex_interfaces/rosidl_generator_type_description/ainex_interfaces/srv/MoveHand.json"
   )
 

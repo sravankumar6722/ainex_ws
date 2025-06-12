@@ -57,15 +57,11 @@ The robot_state_publisher with your URDF
 RViz with the robot model, TF, and fixed frame set (if you use a custom RViz config)
 Send Gesture Commands (Topic)
 
-ros2 topic pub --once both_hands_action std_msgs/String "{data: 'both_hands_point'}"
+ros2 topic pub --once both_hands_action std_msgs/String "{data: 'wave'}"
 
 Move Both Hands to Specific Angles via Service
 
 ros2 service call /move_hand ainex_interfaces/srv/MoveHand "{angles: [10, 20, 30, 40, 50, 60]}"
-
-Run a Gesture by Name via Service
-
-ros2 service call /run_gesture ainex_interfaces/srv/RunGesture "{gesture_name: 'wave'}"
 
 Set Motion Parameters via Service
 
@@ -77,19 +73,19 @@ ros2 action send_goal /execute_gesture ainex_interfaces/action/ExecuteGesture "{
 
 
 ------------------------------| Topics, Services, and Actions |-----------------------------
-__________________________________________________________________________________________________________________________
-Name	                    |      Type	Description                     |                                                   |
-------------------------------------------------------------------------------------------------------------------------  |
+___________________________________________________________________________________________________________________________
+Name	                  |         Type	Description                 |                                                   |
+------------------------------------------------------------------------------------------------------------------------    |
 /both_hands_action	      |  std_msgs/String	                        |  Command gestures for both hands                  |
-/both_hands_action_result | std_msgs/String	                          | Result/feedback from both hands node              |
+/both_hands_action_result | std_msgs/String	                            | Result/feedback from both hands node              |
 /both_servo_angles	      |   std_msgs/Float32MultiArray	            |  Current angles of both hands servos              |
-/joint_states	            |   sensor_msgs/JointState	                |  All joint states for RViz/robot_state_publisher  |
+/joint_states	          |   sensor_msgs/JointState	                |  All joint states for RViz/robot_state_publisher  |
 /move_hand	              |        ainex_interfaces/srv/MoveHand	    |  Service to move both hands to specific angles    |
-/run_gesture	            |        ainex_interfaces/srv/RunGesture	  |  Service to execute a gesture by name             |
-/set_motion_params	      |       ainex_interfaces/srv/SetMotionParams|	Service to set speed, acceleration, step, torque  |
-/get_servo_status	        |      ainex_interfaces/srv/GetServoStatus	|  Service to get current servo status              |
-/execute_gesture	        |    ainex_interfaces/action/ExecuteGesture	|  Action to execute a gesture with feedback        |
-_________________________________________________________________________________________________________________________ |
+/run_gesture	          |        ainex_interfaces/srv/RunGesture	    |  Service to execute a gesture by name             |
+/set_motion_params	      |       ainex_interfaces/srv/SetMotionParams  |	Service to set speed, acceleration, step, torque|
+/get_servo_status	      |      ainex_interfaces/srv/GetServoStatus	|  Service to get current servo status              |
+/execute_gesture	      |    ainex_interfaces/action/ExecuteGesture	|  Action to execute a gesture with feedback        |
+____________________________________________________________________________________________________________________________|
 
 ----------------------------------------| Notes |-------------------
 

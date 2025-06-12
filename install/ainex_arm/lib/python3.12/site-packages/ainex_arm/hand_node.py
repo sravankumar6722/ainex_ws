@@ -8,7 +8,7 @@ import asyncio
 import pandas as pd
 from ainex_arm.scservo_sdk import *
 
-from ainex_interfaces.srv import RunGesture, MoveHand, SetMotionParams, GetServoStatus
+from ainex_interfaces.srv import MoveHand, SetMotionParams, GetServoStatus
 from ainex_interfaces.action import ExecuteGesture
 from rclpy.action import ActionServer
 
@@ -80,9 +80,8 @@ class HandNode(Node):
         self.joint_state_sub = self.create_subscription(JointState, 'joint_states', self.joint_state_callback, 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
 
-        # Service servers for MoveHand, RunGesture, and SetMotionParams
+        # Service servers for MoveHand and SetMotionParams
         self.srv = self.create_service(MoveHand, 'move_hand', self.handle_move_hand_service)
-        self.gesture_srv = self.create_service(RunGesture, 'run_gesture', self.handle_run_gesture_service)
         self.set_motion_params_srv = self.create_service(SetMotionParams, 'set_motion_params', self.handle_set_motion_params)
         self.get_servo_status_srv = self.create_service(GetServoStatus, 'get_servo_status', self.handle_get_servo_status)
 
@@ -161,18 +160,6 @@ class HandNode(Node):
         except Exception as e:
             response.success = False
             response.message = str(e)
-        return response
-
-    def handle_run_gesture_service(self, request, response):
-        gesture = request.gesture_name
-        sheet_file = os.path.join(EXCEL_FOLDER, f'{gesture}_sheet.xlsx')
-        if os.path.exists(sheet_file):
-            self.execute_both_hands_gesture(sheet_file)
-            response.success = True
-            response.message = "Gesture executed"
-        else:
-            response.success = False
-            response.message = "Gesture file not found"
         return response
 
     async def execute_gesture_action_callback(self, goal_handle):
